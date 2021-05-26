@@ -1,14 +1,22 @@
-Hi, I am _@huxpro_ (Huang, Xuan), an UI/Frontend engineer & designer, accidentally growing into a compiler hacker. My current interests range from programming languages theory and implementation in general (compiler, type system, type-based formal verification, virtual machine, runtime systems, garbage collection) to software engineering in the tech industry (client-side web/mobile app development, server-side backend, user interface and UX, developer infrastructure and DX). 
+### aspiring a Data Scientist 👋
 
-I'm currently working on the [Hermes JavaScript Engine](https://hermesengine.dev/) at [Facebook](http://facebook.com/). I was also involved in some of the [Facebook Reality Labs](https://tech.fb.com/ar-vr/) and the [ReasonML](https://reasonml.github.io/) (now [ReScript](https://rescript-lang.org/)) efforts. I'm also passionated about [React](https://reactjs.org/) and [React Native](https://reactnative.dev/). 
+- 🔎  Info ...
+  - Jaeuk Yang (26)
+  - studying ***Data-Science***
 
-In the past, I worked on [Alitrip (Fliggy)](https://www.alitrip.com/) mobile and web apps under the [Alibaba Group](https://en.wikipedia.org/wiki/Alibaba_Group), found and lead front-end infrastructure team at an unicorn startup company [Beijing Weiying (a.k.a. WePiao, now acquired by Maoyan)](https://www.crunchbase.com/organization/beijing-weiying-technology), and helped [Ele.me (now acquired by Alibaba)](https://en.wikipedia.org/wiki/Ele.me) to upgrade their mobile web site into [the first influential PWA (progressive web app) in China](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509).
+- 🌱  I’m currently learning ...
+  - Python
+  - Exploratory Data Analysis
+  - Feature Engineering
+  - Data Visualization
+  - ML/AI
 
-I studied BA, Digital Media Art at [Communication University of China](https://en.wikipedia.org/wiki/Communication_University_of_China) and MS, Computer Science (with a focus on programming languages) at [Rochester Institute of Technology](https://en.wikipedia.org/wiki/Rochester_Institute_of_Technology).
-
-##### [My PL Spectrum (WIP 🚧)](https://huangxuan.me/2020/05/05/pl-chart/)
-
-I made a chart to visualize my experiences and interests on some of the programming languages. I know. I know this is always contraversial. But it's just something quite self-entertaining to do. So bare with me and have fun reading that!
+- 🌱  I've learned ...
+  - iOS app develop, ***Swift***
+  - Mobile App back-end, ***Node.js*** 
+  
+- 📫  How to reach me: ...
+  - email: didwodnr123@gmail.com
 
 ##### Appearence
 
