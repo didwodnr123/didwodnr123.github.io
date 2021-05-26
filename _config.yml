@@ -77,8 +77,8 @@ netease_comment: false
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "黄玄，前端娱乐圈 NPC，编程语言/编译器初心者 <br> An UI/Frontend dev & designer accidentally growing into a compiler/PL hacker."
-sidebar-avatar: /img/avatar-hux-ny.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-about-description: "Aspiring data scientist | ML/DL Engineer | Data Engineer."
+sidebar-avatar: /img/jaeuk.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
