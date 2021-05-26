@@ -12,9 +12,7 @@ tags:
 ---
 
 # This is Heading
-
 ## This is heading
-
 ### This is heading
 
 ```python
