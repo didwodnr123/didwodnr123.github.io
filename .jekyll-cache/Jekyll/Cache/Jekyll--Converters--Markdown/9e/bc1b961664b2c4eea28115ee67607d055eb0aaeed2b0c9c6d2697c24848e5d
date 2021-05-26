@@ -1,22 +1,33 @@
-### Aspiring a Data Scientist 👋
+I"&<h3 id="aspiring-a-data-scientist-">Aspiring a Data Scientist 👋</h3>
 
-- 🔎  Info ...
-  - Jaeuk Yang (26)
-  - studying ***Data-Science***
-
-- 🌱  I’m currently learning ...
-  - Python
-  - Exploratory Data Analysis
-  - Feature Engineering
-  - Data Visualization
-  - ML/DL
-
-- 🌱  I've learned ...
-  - iOS app develop, ***Swift***
-  - Mobile App back-end, ***Node.js*** 
-  
-- 📫  How to reach me: ...
-  - email: didwodnr123@gmail.com
+<ul>
+  <li>🔎  Info …
+    <ul>
+      <li>Jaeuk Yang (26)</li>
+      <li>studying <strong><em>Data-Science</em></strong></li>
+    </ul>
+  </li>
+  <li>🌱  I’m currently learning …
+    <ul>
+      <li>Python</li>
+      <li>Exploratory Data Analysis</li>
+      <li>Feature Engineering</li>
+      <li>Data Visualization</li>
+      <li>ML/DL</li>
+    </ul>
+  </li>
+  <li>🌱  I’ve learned …
+    <ul>
+      <li>iOS app develop, <strong><em>Swift</em></strong></li>
+      <li>Mobile App back-end, <strong><em>Node.js</em></strong></li>
+    </ul>
+  </li>
+  <li>📫  How to reach me: …
+    <ul>
+      <li>email: didwodnr123@gmail.com</li>
+    </ul>
+  </li>
+</ul>
 
 <!-- ##### Appearence
 
@@ -39,3 +50,4 @@
 [7]: https://yanshuo.io/assets/player/?deck=593ad6fbfe88c2006a0a0d6d "The State of PWA"
 [8]: https://yanshuo.io/assets/player/?deck=594d673d570c357d0698a950 "Building PWA"
 [9]: //huangxuan.me/jsconfcn2017/ -->
+:ET
