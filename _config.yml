@@ -58,7 +58,7 @@ kramdown:
 
 
 # Disqus settings
-# disqus_username: didwodnr123
+disqus_username: didwodnr123
 
 # Netease settings
 netease_comment: false
@@ -78,7 +78,7 @@ netease_comment: false
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Aspiring data scientist <br> | ML/DL Engineer <br> | Data Engineer."
-sidebar-avatar: /img/jaeuk.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: https://github.com/didwodnr123/didwodnr123.github.io/blob/main/img/jaeuk.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
