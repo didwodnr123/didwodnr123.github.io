@@ -5,8 +5,8 @@
     <description>Data Science | ML/DL | Data engineering</description>
     <link>https://didwodnr123.github.io/</link>
     <atom:link href="https://didwodnr123.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 27 May 2021 23:47:25 +0900</pubDate>
-    <lastBuildDate>Thu, 27 May 2021 23:47:25 +0900</lastBuildDate>
+    <pubDate>Thu, 27 May 2021 23:50:43 +0900</pubDate>
+    <lastBuildDate>Thu, 27 May 2021 23:50:43 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -17,7 +17,7 @@
 
 &lt;h2 id=&quot;generative-models&quot;&gt;Generative Models&lt;/h2&gt;
 
-&lt;p&gt;&lt;img src=&quot;/Users/yangjaeug/Desktop/GitHub/didwodnr123.github.io/img/AI_study/gan1.png&quot; alt=&quot;GAN&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/AI_study/gan1.png&quot; alt=&quot;GAN&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;strong&gt;Generator&lt;/strong&gt;&lt;/p&gt;
 
@@ -182,7 +182,7 @@
   &lt;li&gt;Training&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;&lt;img src=&quot;/Users/yangjaeug/Desktop/GitHub/didwodnr123.github.io/img/AI_study/pytorch_vs_tensorflow.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/img/AI_study/pytorch_vs_tensorflow.png&quot; alt=&quot;GAN&quot; /&gt;&lt;/p&gt;
 
 &lt;h4 id=&quot;summary-7&quot;&gt;Summary&lt;/h4&gt;
 
