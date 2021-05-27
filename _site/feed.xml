@@ -5,27 +5,27 @@
     <description>Data Science | ML/DL | Data engineering</description>
     <link>https://didwodnr123.github.io/</link>
     <atom:link href="https://didwodnr123.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 27 May 2021 22:17:25 +0900</pubDate>
-    <lastBuildDate>Thu, 27 May 2021 22:17:25 +0900</lastBuildDate>
+    <pubDate>Thu, 27 May 2021 23:45:21 +0900</pubDate>
+    <lastBuildDate>Thu, 27 May 2021 23:45:21 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
         <title>[AI study] Week1: Intro to GAN</title>
-        <description>&lt;h2 id=&quot;gan&quot;&gt;GAN&lt;/h2&gt;
+        <description>&lt;p&gt;지난주, Coursera Andrew Ng 교수님의 Deep learning specialization을 마무리했습니다. 이번주부터는 굉장히 섬세한 fake 이미지를 생성할 수 있는 GAN 모델을 다루는 강의를 시청하고 리뷰할 예정입니다.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Generative Adversarial Network&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;GAN 이란 Generative Adverarial Network의 약자로, 하나의 모델이 가짜 이미지를 생성하고 다른 모델이 진짜 이미지와 가짜 이미지를 구분? 하면서 Generator 모델이 더욱 완벽한 fake 이미지를 만들 수 있도록 training 합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;generative-models&quot;&gt;Generative Models&lt;/h2&gt;
 
 &lt;p&gt;&lt;img src=&quot;/Users/yangjaeug/Desktop/GitHub/didwodnr123.github.io/img/AI_study/gan1.png&quot; alt=&quot;GAN&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/p&gt;
 
-&lt;h4 id=&quot;generator&quot;&gt;Generator&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Generator&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Random noise를 input에 주고 fake image를 생성합니다.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h4 id=&quot;discriminator&quot;&gt;Discriminator&lt;/h4&gt;
+&lt;p&gt;&lt;strong&gt;Discriminator&lt;/strong&gt;&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Real image를 input에 주고 학습시킵니다.&lt;/li&gt;
@@ -33,12 +33,181 @@
 
 &lt;p&gt;학습이 완료되면 Random Noise를 input으로 Generator에 주게 되면 정교한 fake 이미지를 생성하게 됩니다. 그리고 위 모델들이 경쟁하며 성능을 향상시키는 구조를 갖고 있습니다.&lt;/p&gt;
 
-&lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
+&lt;h4 id=&quot;summary&quot;&gt;Summary&lt;/h4&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Generative models learn to produce &lt;strong&gt;realistic&lt;/strong&gt; examples&lt;/li&gt;
   &lt;li&gt;Discriminative models distinguish between classes&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;h2 id=&quot;real-life-gans&quot;&gt;Real Life GANs&lt;/h2&gt;
+
+&lt;p&gt;Ian Goodfellow is known as the creator of the GAN.&lt;/p&gt;
+
+&lt;p&gt;not limited to human faces&lt;/p&gt;
+
+&lt;p&gt;image translation : horse to zebra, vice versa&lt;/p&gt;
+
+&lt;p&gt;draw something -&amp;gt; able to produce realistic image&lt;/p&gt;
+
+&lt;p&gt;Monariza -&amp;gt; moving&lt;/p&gt;
+
+&lt;p&gt;Companies Using GANs&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Adobe&lt;/li&gt;
+  &lt;li&gt;Google (text generation)&lt;/li&gt;
+  &lt;li&gt;IBM (data augmentation) : x enough data -&amp;gt; augmentation&lt;/li&gt;
+  &lt;li&gt;whatever you like&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;summary-1&quot;&gt;Summary&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;GANs’ performance is rapidly improving&lt;/li&gt;
+  &lt;li&gt;Huge opportunity to work in this space!&lt;/li&gt;
+  &lt;li&gt;Major companies are using them&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;intuition-behind-gans&quot;&gt;Intuition Behind GANs&lt;/h2&gt;
+
+&lt;h4 id=&quot;outline&quot;&gt;Outline&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;the goal of the generator and the discriminator&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the competition between them&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Generator : learn to make fakes that look real&lt;/p&gt;
+
+&lt;p&gt;Discriminator : learns to distinguish real from fake&lt;/p&gt;
+
+&lt;p&gt;First, train a discriminator&lt;/p&gt;
+
+&lt;h4 id=&quot;summary-2&quot;&gt;Summary&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The &lt;strong&gt;generator’s&lt;/strong&gt; goal is to fool the discriminator&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;discriminator’s&lt;/strong&gt; goal is to distinguish between real and fake&lt;/li&gt;
+  &lt;li&gt;They learn from the competition with each other&lt;/li&gt;
+  &lt;li&gt;At the end, &lt;strong&gt;fakes&lt;/strong&gt; look &lt;strong&gt;real&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;discriminator&quot;&gt;Discriminator&lt;/h2&gt;
+
+&lt;h4 id=&quot;outline-1&quot;&gt;Outline&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Review of classifiers&lt;/li&gt;
+  &lt;li&gt;The role of classifiers in terms of probability&lt;/li&gt;
+  &lt;li&gt;Discriminator&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;Discriminator : Distinguish between different classes, P(Y&lt;/td&gt;
+      &lt;td&gt;X)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;summary-3&quot;&gt;Summary&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The &lt;strong&gt;discriminator&lt;/strong&gt; is a classifier&lt;/li&gt;
+  &lt;li&gt;It learns the probability of class Y (&lt;strong&gt;real&lt;/strong&gt; or &lt;strong&gt;fake&lt;/strong&gt;) given features X&lt;/li&gt;
+  &lt;li&gt;The probabilities are the feedback for the &lt;strong&gt;generator&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;generator&quot;&gt;Generator&lt;/h2&gt;
+
+&lt;h4 id=&quot;outline-2&quot;&gt;Outline&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;What the generator does&lt;/li&gt;
+  &lt;li&gt;How it improves its performance&lt;/li&gt;
+  &lt;li&gt;Generator in terms of probability&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Noise vector - different output&lt;/p&gt;
+
+&lt;p&gt;Noise -&amp;gt; &lt;strong&gt;Generator&lt;/strong&gt; -&amp;gt; Features(X hat) -&amp;gt; **Discriminator ** -&amp;gt; Output (Y hat) -&amp;gt; Cost -&amp;gt; update Generator’s Parameters&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;P(X&lt;/td&gt;
+      &lt;td&gt;Y) or P(X)&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h4 id=&quot;summary-4&quot;&gt;Summary&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The &lt;strong&gt;Generator&lt;/strong&gt; produces fake data&lt;/li&gt;
+  &lt;li&gt;It learns the probability of features X&lt;/li&gt;
+  &lt;li&gt;The &lt;strong&gt;Generator&lt;/strong&gt; takes as input noise (random features)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;bce-cost-function&quot;&gt;BCE Cost Function&lt;/h2&gt;
+
+&lt;h4 id=&quot;outline-3&quot;&gt;Outline&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Binary Cross Entropy(BCE) Loss equation by parts&lt;/li&gt;
+  &lt;li&gt;How it looks graphically&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;summary-5&quot;&gt;Summary&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;The BCE cost function has two parts (one relevant for each class)&lt;/li&gt;
+  &lt;li&gt;Close to zero when label and the prediction are similar&lt;/li&gt;
+  &lt;li&gt;Approaches infinity when the label and the prediction are different&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;putting-it-all-together&quot;&gt;Putting It All Together&lt;/h2&gt;
+
+&lt;h4 id=&quot;outline-4&quot;&gt;Outline&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;How the whole architecture looks&lt;/li&gt;
+  &lt;li&gt;How to train GANs&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;summary-6&quot;&gt;Summary&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;GANs train in an alternating fashion&lt;/li&gt;
+  &lt;li&gt;The two models should always be at a similar “skill” level&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;intro-to-pytorch&quot;&gt;Intro to PyTorch&lt;/h2&gt;
+
+&lt;h4 id=&quot;outline-5&quot;&gt;Outline&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Comparison with TensorFlow&lt;/li&gt;
+  &lt;li&gt;Dfining Models&lt;/li&gt;
+  &lt;li&gt;Training&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Users/yangjaeug/Desktop/GitHub/didwodnr123.github.io/img/AI_study/pytorch_vs_tensorflow.png&quot; alt=&quot;screenshot&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;summary-7&quot;&gt;Summary&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;PyTorch makes computations on the run&lt;/li&gt;
+  &lt;li&gt;Dynamic computational graphs in PyTorch&lt;/li&gt;
+  &lt;li&gt;&lt;strong&gt;Just another framework, and similar to Tensorflow!&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
 </description>
         <pubDate>Thu, 27 May 2021 00:00:00 +0900</pubDate>
         <link>https://didwodnr123.github.io/2021/05/27/week1/</link>

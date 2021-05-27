@@ -1,0 +1,153 @@
+I"-<p>지난주, Coursera Andrew Ng 교수님의 Deep learning specialization을 마무리했습니다. 이번주부터는 굉장히 섬세한 fake 이미지를 생성할 수 있는 GAN 모델을 다루는 강의를 시청하고 리뷰할 예정입니다.</p>
+
+<p>GAN 이란 Generative Adverarial Network의 약자로, 하나의 모델이 가짜 이미지를 생성하고 다른 모델이 진짜 이미지와 가짜 이미지를 구분? 하면서 Generator 모델이 더욱 완벽한 fake 이미지를 만들 수 있도록 training 합니다.</p>
+
+<h2 id="generative-models">Generative Models</h2>
+
+<p><img src="/Users/yangjaeug/Desktop/GitHub/didwodnr123.github.io/img/AI_study/gan1.png" alt="GAN" style="zoom:50%;" /></p>
+
+<p><strong>Generator</strong></p>
+
+<ul>
+  <li>Random noise를 input에 주고 fake image를 생성합니다.</li>
+</ul>
+
+<p><strong>Discriminator</strong></p>
+
+<ul>
+  <li>Real image를 input에 주고 학습시킵니다.</li>
+</ul>
+
+<p>학습이 완료되면 Random Noise를 input으로 Generator에 주게 되면 정교한 fake 이미지를 생성하게 됩니다. 그리고 위 모델들이 경쟁하며 성능을 향상시키는 구조를 갖고 있습니다.</p>
+
+<h3 id="summary">Summary</h3>
+
+<ul>
+  <li>Generative models learn to produce <strong>realistic</strong> examples</li>
+  <li>Discriminative models distinguish between classes</li>
+</ul>
+
+<h2 id="real-life-gans">Real Life GANs</h2>
+
+<p>Ian Goodfellow is known as the creator of the GAN.</p>
+
+<p>not limited to human faces</p>
+
+<p>image translation : horse to zebra, vice versa</p>
+
+<p>draw something -&gt; able to produce realistic image</p>
+
+<p>Monariza -&gt; moving</p>
+
+<p>Companies Using GANs</p>
+
+<ul>
+  <li>Adobe</li>
+  <li>Google (text generation)</li>
+  <li>IBM (data augmentation) : x enough data -&gt; augmentation</li>
+  <li>whatever you like</li>
+</ul>
+
+<h4 id="summary-1">Summary</h4>
+
+<ul>
+  <li>GANs’ performance is rapidly improving</li>
+  <li>Huge opportunity to work in this space!</li>
+  <li>Major companies are using them</li>
+</ul>
+
+<h2 id="intuition-behind-gans">Intuition Behind GANs</h2>
+
+<h4 id="outline">Outline</h4>
+
+<ul>
+  <li>
+    <p>the goal of the generator and the discriminator</p>
+  </li>
+  <li>
+    <p>the competition between them</p>
+  </li>
+</ul>
+
+<p>Generator : learn to make fakes that look real</p>
+
+<p>Discriminator : learns to distinguish real from fake</p>
+
+<p>First, train a discriminator</p>
+
+<h4 id="summary-2">Summary</h4>
+
+<ul>
+  <li>The <strong>generator’s</strong> goal is to fool the discriminator</li>
+  <li>The <strong>discriminator’s</strong> goal is to distinguish between real and fake</li>
+  <li>They learn from the competition with each other</li>
+  <li>At the end, <strong>fakes</strong> look <strong>real</strong></li>
+</ul>
+
+<h2 id="discriminator">Discriminator</h2>
+
+<h4 id="outline-1">Outline</h4>
+
+<ul>
+  <li>Review of classifiers</li>
+  <li>The role of classifiers in terms of probability</li>
+  <li>Discriminator</li>
+</ul>
+
+<table>
+  <tbody>
+    <tr>
+      <td>Discriminator : Distinguish between different classes, P(Y</td>
+      <td>X)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="summary-3">Summary</h4>
+
+<ul>
+  <li>The <strong>discriminator</strong> is a classifier</li>
+  <li>It learns the probability of class Y (<strong>real</strong> or <strong>fake</strong>) given features X</li>
+  <li>The probabilities are the feedback for the <strong>generator</strong></li>
+</ul>
+
+<h2 id="generator">Generator</h2>
+
+<h4 id="outline-2">Outline</h4>
+
+<ul>
+  <li>What the generator does</li>
+  <li>How it improves its performance</li>
+  <li>Generator in terms of probability</li>
+</ul>
+
+<p>Noise vector - different output</p>
+
+<p>Noise -&gt; <strong>Generator</strong> -&gt; Features(X hat) -&gt; **Discriminator ** -&gt; Output (Y hat) -&gt; Cost -&gt; update Generator’s Parameters</p>
+
+<table>
+  <tbody>
+    <tr>
+      <td>P(X</td>
+      <td>Y) or P(X)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="summary-4">Summary</h4>
+
+<ul>
+  <li>The <strong>Generator</strong> produces fake data</li>
+  <li>It learns the probability of features X</li>
+  <li>The <strong>Generator</strong> takes as input noise (random features)</li>
+</ul>
+
+<h2 id="bce-cost-function">BCE Cost Function</h2>
+
+<p>“Binary Cross Entropy” Cost Function</p>
+
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+
+<h2 id="intro-to-pytorch">Intro to PyTorch</h2>
+
+:ET
