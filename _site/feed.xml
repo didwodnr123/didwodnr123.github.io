@@ -5,8 +5,8 @@
     <description>Data Science | ML/DL | Data engineering</description>
     <link>https://didwodnr123.github.io/</link>
     <atom:link href="https://didwodnr123.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 27 May 2021 23:45:21 +0900</pubDate>
-    <lastBuildDate>Thu, 27 May 2021 23:45:21 +0900</lastBuildDate>
+    <pubDate>Thu, 27 May 2021 23:47:25 +0900</pubDate>
+    <lastBuildDate>Thu, 27 May 2021 23:47:25 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -107,14 +107,7 @@
   &lt;li&gt;Discriminator&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;Discriminator : Distinguish between different classes, P(Y&lt;/td&gt;
-      &lt;td&gt;X)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
+&lt;p&gt;Discriminator : Distinguish between different classes&lt;/p&gt;
 
 &lt;h4 id=&quot;summary-3&quot;&gt;Summary&lt;/h4&gt;
 
@@ -137,15 +130,6 @@
 &lt;p&gt;Noise vector - different output&lt;/p&gt;
 
 &lt;p&gt;Noise -&amp;gt; &lt;strong&gt;Generator&lt;/strong&gt; -&amp;gt; Features(X hat) -&amp;gt; **Discriminator ** -&amp;gt; Output (Y hat) -&amp;gt; Cost -&amp;gt; update Generator’s Parameters&lt;/p&gt;
-
-&lt;table&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt;
-      &lt;td&gt;P(X&lt;/td&gt;
-      &lt;td&gt;Y) or P(X)&lt;/td&gt;
-    &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
 
 &lt;h4 id=&quot;summary-4&quot;&gt;Summary&lt;/h4&gt;
 
