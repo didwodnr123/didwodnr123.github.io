@@ -12,17 +12,40 @@
 
     <!-- Open Graph -->
     <meta property="og:title"
-        content="Data Science | Jaeuk's Blog">
+        content="[AI study] Week1: Intro to GAN - Data Science | Jaeuk's Blog">
     
-    <meta property="og:type" content="website">
-    <meta property="og:description"
-        content="[Just Do It]">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="GAN
+">
+    
+    <meta property="article:published_time" content=" 2021-05-27T00:00:00Z">
+    
+    
+    <meta property="article:author" content="Jaeuk">
+    
+    
+    <meta property="article:tag" content="AI study">
+    
+    <meta property="article:tag" content="week1">
+    
+    <meta property="article:tag" content="python">
+    
+    <meta property="article:tag" content="paper">
+    
+    <meta property="article:tag" content="GAN">
+    
+    <meta property="article:tag" content="gan">
+    
+    <meta property="article:tag" content="튜토리얼">
+    
+    <meta property="article:tag" content="파이썬">
+    
     
     <meta property="og:image" content="https://didwodnr123.github.io/img/jaeuk.jpg">
-    <meta property="og:url" content="https://didwodnr123.github.io/">
+    <meta property="og:url" content="https://didwodnr123.github.io/2021/05/27/week1/">
     <meta property="og:site_name" content="Data Science | Jaeuk's Blog">
 
-    <title>Data Science | Jaeuk's Blog</title>
+    <title>[AI study] Week1: Intro to GAN - Data Science | Jaeuk's Blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -31,7 +54,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://didwodnr123.github.io/">
+    <link rel="canonical" href="https://didwodnr123.github.io/2021/05/27/week1/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href=" /css/bootstrap.min.css">
@@ -195,214 +218,159 @@
   </div>
 </div>
 
-    <!-- Page Header -->
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/post-bg-2015.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
 
 
 
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/post-bg-2015.jpg');
+        background: ;
+    }
 
+    
+</style>
 
+<header class="intro-header" >
 
-
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="site-heading">
-        
-          <h1>Jaeuk's Blog</h1>
-          <span class="subheading">[Just Do It]</span>
+    <div class="header-mask"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/archive/?tag=AI+study" title="AI study">AI study</a>
+                        
+                        <a class="tag" href="/archive/?tag=week1" title="week1">week1</a>
+                        
+                        <a class="tag" href="/archive/?tag=python" title="python">python</a>
+                        
+                        <a class="tag" href="/archive/?tag=paper" title="paper">paper</a>
+                        
+                        <a class="tag" href="/archive/?tag=GAN" title="GAN">GAN</a>
+                        
+                        <a class="tag" href="/archive/?tag=gan" title="gan">gan</a>
+                        
+                        <a class="tag" href="/archive/?tag=%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC" title="튜토리얼">튜토리얼</a>
+                        
+                        <a class="tag" href="/archive/?tag=%ED%8C%8C%EC%9D%B4%EC%8D%AC" title="파이썬">파이썬</a>
+                        
+                    </div>
+                    <h1>[AI study] Week1: Intro to GAN</h1>
+                    
+                    <h2 class="subheading"> "Generative Adversarial Network"</h2>
+                    <span class="meta">Posted by Jaeuk on May 27, 2021</span>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </header>
 
 
-<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    
-
-    <!-- USE SIDEBAR -->
-    <!-- PostList Container -->
-    <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12
-      col-xs-12 postlist-container">
-      
-<div class="post-preview">
-    <a href="/2021/05/27/week1/">
-        <h2 class="post-title">
-            [AI study] Week1: Intro to GAN
-        </h2>
-        
-        <h3 class="post-subtitle">
-             "Generative Adversarial Network"
-        </h3>
-        
-        <div class="post-content-preview">
-            
-                GAN
-
-
-  Generative Adversarial Network
 
 
 
 
-Generator
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-  Random noise를 input에 주고 fake image를 생성합니다.
-
-
-Discriminator
-
-
-  Real image를 input에 주고 학습시킵니다.
-
-
-학습이 완료되면 Random Noise를 input으로 Generator에 주게 ...
-            
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Jaeuk on May 27, 2021
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2021/05/27/test/">
-        <h2 class="post-title">
-            [AI study] Week1: Intro to GAN
-        </h2>
-        
-        <h3 class="post-subtitle">
-             "Generative Adversarial Network"
-        </h3>
-        
-        <div class="post-content-preview">
-            
-                test
-
-test
-
-test
-
-test
-
-test
-
-
-  fakdjfalf
-  alfkdsjfa
-  askdfalsf
-
-
-테스트
-
-
-  테스트 중입니다.
-  테스트 중입니다.
-  테스트 중입니다.
-
-
-가나다라마바사아자차카타파하 가나다라마바사아자차카 타파하 가나다라마바ㄹㅁ머ㅏ러밀머림러ㅣㅁ러ㅣ머리머리머러미ㅓ리머리머리머리머리머리머리머리ㅓ미러미ㅓ리머리머리머...
-            
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Jaeuk on May 27, 2021
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2021/05/27/basic-classification/">
-        <h2 class="post-title">
-            [Tutorial] Keras: Basic classification
-        </h2>
-        
-        <h3 class="post-subtitle">
-             "Classify images of clothing"
-        </h3>
-        
-        <div class="post-content-preview">
-            
+                <!-- Multi-Lingual -->
                 
-  튜토리얼 출처: TensorFlow
+
+				<h2 id="gan">GAN</h2>
+
+<ul>
+  <li>Generative Adversarial Network</li>
+</ul>
+
+<p><img src="/Users/yangjaeug/Desktop/GitHub/didwodnr123.github.io/img/AI_study/gan1.png" alt="GAN" style="zoom:50%;" /></p>
+
+<h4 id="generator">Generator</h4>
+
+<ul>
+  <li>Random noise를 input에 주고 fake image를 생성합니다.</li>
+</ul>
+
+<h4 id="discriminator">Discriminator</h4>
+
+<ul>
+  <li>Real image를 input에 주고 학습시킵니다.</li>
+</ul>
+
+<p>학습이 완료되면 Random Noise를 input으로 Generator에 주게 되면 정교한 fake 이미지를 생성하게 됩니다. 그리고 위 모델들이 경쟁하며 성능을 향상시키는 구조를 갖고 있습니다.</p>
+
+<h3 id="summary">Summary</h3>
+
+<ul>
+  <li>Generative models learn to produce <strong>realistic</strong> examples</li>
+  <li>Discriminative models distinguish between classes</li>
+</ul>
 
 
-Keras
+                <hr style="visibility: hidden;">
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2021/05/27/test/" data-toggle="tooltip" data-placement="top" title="[AI study] Week1: Intro to GAN">
+                        Previous<br>
+                        <span>[AI study] Week1: Intro to GAN</span>
+                        </a>
+                    </li>
+                    
+                    
+                </ul>
+                <hr style="visibility: hidden;">
 
+                
 
-  a high-level API to build and train models in TensorFlow.
+                
+            </div>  
 
-
-1
-2
-3
-4
-5
-6
-import tensorflow as tf
-
-import numpy as np
-import matplotlib.pyplot as plt
-
-print(tf.__ve...
-            
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Jaeuk on May 27, 2021
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/2021/05/26/Hello-Blog/">
-        <h2 class="post-title">
-            Hello Blog
-        </h2>
+    <!-- Side Catalog Container -->
         
-        <h3 class="post-subtitle">
-             "Hello World, Hello Blog"
-        </h3>
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
         
-        <div class="post-content-preview">
-            
-                This is Heading
-This is heading
-This is heading
 
-1
-print('hello world')
-
-
-
-            
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Jaeuk on May 26, 2021
-    </p>
-</div>
-<hr>
-
-
-<!-- Pager -->
-
-
-    </div>
     <!-- Sidebar Container -->
-    <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12
-      col-xs-12 sidebar-container">
-      <!-- Featured Tags -->
-      
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
 
 
 <section>
+    
+        <hr class="hidden-sm hidden-xs">
     
     <h5><a href="/archive/">FEATURED TAGS</a></h5>
     <div class="tags">
@@ -455,46 +423,8 @@ print('hello world')
 </section>
 
 
-      <!-- Short About -->
-      <section class="visible-md visible-lg">
-  <hr>
-  <h5><a href="/about/">ABOUT ME</a></h5>
-  <div class="short-about">
-    
-    <img src="/img/jaeuk.jpg" />
-    
-    
-    <p>Aspiring data scientist <br> | ML/DL Engineer <br> | Data Engineer.</p>
-    
-    <!-- SNS Link -->
-    
-
-
-<ul class="list-inline">
-
-
-  
-  
-  
-  
-  
-  
-  <li>
-    <a target="_blank" href="https://github.com/didwodnr123">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-  </li>
-  
-  
-</ul>
-  </div>
-</section>
-
-      <!-- Friends Blog -->
-      
+                <!-- Friends Blog -->
+                
 <hr>
 <h5>FRIENDS</h5>
 <ul class="list-inline">
@@ -503,21 +433,54 @@ print('hello world')
   
 </ul>
 
-
-      <!-- Ads -->
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- first shot -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6487568398225121" data-ad-slot="4814308751"
-     data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
+            </div>
+        </div>
     </div>
-    
-  </div>
-</div>
+</article>
 
+<!-- add support for mathjax by voleking-->
+
+
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'right',
+          // icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
 
 

@@ -5,9 +5,174 @@
     <description>Data Science | ML/DL | Data engineering</description>
     <link>https://didwodnr123.github.io/</link>
     <atom:link href="https://didwodnr123.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 26 May 2021 18:38:55 +0900</pubDate>
-    <lastBuildDate>Wed, 26 May 2021 18:38:55 +0900</lastBuildDate>
+    <pubDate>Thu, 27 May 2021 22:17:25 +0900</pubDate>
+    <lastBuildDate>Thu, 27 May 2021 22:17:25 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>[AI study] Week1: Intro to GAN</title>
+        <description>&lt;h2 id=&quot;gan&quot;&gt;GAN&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Generative Adversarial Network&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/Users/yangjaeug/Desktop/GitHub/didwodnr123.github.io/img/AI_study/gan1.png&quot; alt=&quot;GAN&quot; style=&quot;zoom:50%;&quot; /&gt;&lt;/p&gt;
+
+&lt;h4 id=&quot;generator&quot;&gt;Generator&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Random noise를 input에 주고 fake image를 생성합니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h4 id=&quot;discriminator&quot;&gt;Discriminator&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Real image를 input에 주고 학습시킵니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;학습이 완료되면 Random Noise를 input으로 Generator에 주게 되면 정교한 fake 이미지를 생성하게 됩니다. 그리고 위 모델들이 경쟁하며 성능을 향상시키는 구조를 갖고 있습니다.&lt;/p&gt;
+
+&lt;h3 id=&quot;summary&quot;&gt;Summary&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Generative models learn to produce &lt;strong&gt;realistic&lt;/strong&gt; examples&lt;/li&gt;
+  &lt;li&gt;Discriminative models distinguish between classes&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 27 May 2021 00:00:00 +0900</pubDate>
+        <link>https://didwodnr123.github.io/2021/05/27/week1/</link>
+        <guid isPermaLink="true">https://didwodnr123.github.io/2021/05/27/week1/</guid>
+        
+        <category>AI study</category>
+        
+        <category>week1</category>
+        
+        <category>python</category>
+        
+        <category>paper</category>
+        
+        <category>GAN</category>
+        
+        <category>gan</category>
+        
+        <category>튜토리얼</category>
+        
+        <category>파이썬</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>[AI study] Week1: Intro to GAN</title>
+        <description>&lt;h1 id=&quot;test&quot;&gt;test&lt;/h1&gt;
+
+&lt;h2 id=&quot;test-1&quot;&gt;test&lt;/h2&gt;
+
+&lt;h3 id=&quot;test-2&quot;&gt;test&lt;/h3&gt;
+
+&lt;h4 id=&quot;test-3&quot;&gt;test&lt;/h4&gt;
+
+&lt;h3 id=&quot;test-4&quot;&gt;test&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;fakdjfalf&lt;/li&gt;
+  &lt;li&gt;alfkdsjfa&lt;/li&gt;
+  &lt;li&gt;askdfalsf&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;테스트&quot;&gt;테스트&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;테스트 중입니다.&lt;/li&gt;
+  &lt;li&gt;테스트 중입니다.&lt;/li&gt;
+  &lt;li&gt;테스트 중입니다.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;가나다라마바사아자차카타파하 가나다라마바사아자차카 타파하 가나다라마바ㄹㅁ머ㅏ러밀머림러ㅣㅁ러ㅣ머리머리머러미ㅓ리머리머리머리머리머리머리머리ㅓ미러미ㅓ리머리머리머ㅣ러미ㅓ리머리머리멀머리머리머리머리머리머리ㅓ미리먈ㄷㅈ매ㅑ렂;ㅐㅁ댜러;ㅁ재댜렂;ㅐ댜러재댜러재댜러잳랴ㅓㅈ대ㅑ렂대랴ㅓㅈ대랴ㅓㅈ대랻ㅈ&lt;/p&gt;
+
+&lt;p&gt;dofijaoqefijqoiefjqoweifjqoweifjqoweifjwqeoifjweqofijqwoefijweoifjwoqfijqoweifjqowiefjqowifjoiwqejfoiwqejfoqwifjoqweifjoweifjowqeifjqwoifejqoiewfjoewifjowifjqoifejoqwiefjoqwiefjqwoiefjoqweijfoidsjfaisjfosdijfaof&lt;/p&gt;
+</description>
+        <pubDate>Thu, 27 May 2021 00:00:00 +0900</pubDate>
+        <link>https://didwodnr123.github.io/2021/05/27/test/</link>
+        <guid isPermaLink="true">https://didwodnr123.github.io/2021/05/27/test/</guid>
+        
+        <category>AI study</category>
+        
+        <category>week1</category>
+        
+        <category>python</category>
+        
+        <category>paper</category>
+        
+        <category>GAN</category>
+        
+        <category>gan</category>
+        
+        <category>튜토리얼</category>
+        
+        <category>파이썬</category>
+        
+        
+      </item>
+    
+      <item>
+        <title>[Tutorial] Keras: Basic classification</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;&lt;a href=&quot;https://www.tensorflow.org/tutorials/keras/classification&quot;&gt;튜토리얼 출처: TensorFlow&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h3 id=&quot;keras&quot;&gt;Keras&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;a high-level API to build and train models in TensorFlow.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
+
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
+&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__version__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Thu, 27 May 2021 00:00:00 +0900</pubDate>
+        <link>https://didwodnr123.github.io/2021/05/27/basic-classification/</link>
+        <guid isPermaLink="true">https://didwodnr123.github.io/2021/05/27/basic-classification/</guid>
+        
+        <category>tutorial</category>
+        
+        <category>python</category>
+        
+        <category>tensorflow</category>
+        
+        <category>keras</category>
+        
+        <category>classification</category>
+        
+        <category>image</category>
+        
+        <category>fashion mnist</category>
+        
+        <category>튜토리얼</category>
+        
+        <category>파이썬</category>
+        
+        <category>이미지 분류</category>
+        
+        <category>케라스</category>
+        
+        <category>텐서플로우</category>
+        
+        
+      </item>
     
       <item>
         <title>Hello Blog</title>

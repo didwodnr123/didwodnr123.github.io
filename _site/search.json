@@ -1,6 +1,30 @@
 [
   
     {
+      "title"    : "[AI study] Week1: Intro to GAN",
+      "subtitle" : " &quot;Generative Adversarial Network&quot;",
+      "tags"     : "AI study, week1, python, paper, GAN, gan, 튜토리얼, 파이썬",
+      "url"      : "/2021/05/27/week1/",
+      "date"     : "2021-05-27 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "[AI study] Week1: Intro to GAN",
+      "subtitle" : " &quot;Generative Adversarial Network&quot;",
+      "tags"     : "AI study, week1, python, paper, GAN, gan, 튜토리얼, 파이썬",
+      "url"      : "/2021/05/27/test/",
+      "date"     : "2021-05-27 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "[Tutorial] Keras: Basic classification",
+      "subtitle" : " &quot;Classify images of clothing&quot;",
+      "tags"     : "tutorial, python, tensorflow, keras, classification, image, fashion mnist, 튜토리얼, 파이썬, 이미지 분류, 케라스, 텐서플로우",
+      "url"      : "/2021/05/27/basic-classification/",
+      "date"     : "2021-05-27 00:00:00 +0900"
+    } ,
+  
+    {
       "title"    : "Hello Blog",
       "subtitle" : " &quot;Hello World, Hello Blog&quot;",
       "tags"     : "New, Blog",
