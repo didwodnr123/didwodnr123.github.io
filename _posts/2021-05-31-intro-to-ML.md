@@ -31,3 +31,7 @@ tags:
 
 어떻게 모델이 Fitting 되는 지에 대한 내용은 꽤 복잡하기 때문에 나중에 심화 과정에서 배워도 됩니다. 모델이 한 번 Fitting 되고 나면 새로운 데이터를 사용해서 추가적으로 집 값을 예측할 수 있습니다.
 
+## Improving the Decision Tree
+
+![First Decision Trees](http://i.imgur.com/prAjgku.png)
+
