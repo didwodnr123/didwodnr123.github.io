@@ -49,3 +49,14 @@ tags:
 import pandas as pd
 ```
 
+판다스 라이브러리 중 가장 중요한 것은 DataFrame 입니다. 데이터프레임은 데이터를 엑셀 표 처럼 구성해주는 역할을 합니다. 지금부터 Melbourne, Australia의 집값 데이터를 활용해서 pandas를 사용해보겠습니다.
+
+```python
+# save filepath to variable for easier access
+melbourne_file_path = './data/melb_data.csv'
+# read the data and store data in DataFrame titled melbourne_data
+melbourne_data = pd.read_csv(melbourne_file_path) 
+# print a summary of the data in Melbourne data
+melbourne_data.describe()
+```
+
