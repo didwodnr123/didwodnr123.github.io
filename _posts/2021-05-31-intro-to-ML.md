@@ -31,7 +31,23 @@ tags:
 
 어떻게 모델이 Fitting 되는 지에 대한 내용은 꽤 복잡하기 때문에 나중에 심화 과정에서 배워도 됩니다. 모델이 한 번 Fitting 되고 나면 새로운 데이터를 사용해서 추가적으로 집 값을 예측할 수 있습니다.
 
-## Improving the Decision Tree
+### Improving the Decision Tree
 
 ![First Decision Trees](http://i.imgur.com/prAjgku.png)
+
+일반적으로 방이 2개 이상인 집이 더 비쌉니다. 따라서 왼쪽 Tree가 더 논리적으로 맞다는 것을 확인할 수 있습니다. 하지만 이것의 가장 큰 단점은 집들의 다양한 특징들을 고려하지 못한다는 것입니다...
+
+![Depth 2 Tree](http://i.imgur.com/R3ywQsR.png)
+
+따라서 tree를 보다 **Deep** 하게 구성해야 합니다. 이것도 사실은 부족하지만 이해를 돕기에는 충분하다고 생각합니다. 마지막으로 맨 끝에 위치한 박스? 를 **Leaf**라고 합니다.
+
+
+
+## Basic Data Exploration
+
+### Using Pandas to Get Familiar With Your Data
+
+```python
+import pandas as pd
+```
 
