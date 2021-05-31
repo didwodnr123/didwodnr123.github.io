@@ -1,18 +1,18 @@
 [
   
     {
-      "title"    : "[AI study] Week1: Intro to GAN",
-      "subtitle" : " &quot;Generative Adversarial Network&quot;",
-      "tags"     : "AI study, week1, python, paper, GAN, gan, 튜토리얼, 파이썬",
-      "url"      : "/2021/05/27/week1/",
-      "date"     : "2021-05-27 00:00:00 +0900"
+      "title"    : "[번역] Intro to Machine Learning",
+      "subtitle" : " &quot;How Models workn&quot;",
+      "tags"     : "Kaggle, ML, basic, micro-course, 캐글, 코스, 파이썬",
+      "url"      : "/2021/05/31/intro-to-ML/",
+      "date"     : "2021-05-31 00:00:00 +0900"
     } ,
   
     {
       "title"    : "[AI study] Week1: Intro to GAN",
       "subtitle" : " &quot;Generative Adversarial Network&quot;",
       "tags"     : "AI study, week1, python, paper, GAN, gan, 튜토리얼, 파이썬",
-      "url"      : "/2021/05/27/test/",
+      "url"      : "/2021/05/27/week1/",
       "date"     : "2021-05-27 00:00:00 +0900"
     } ,
   

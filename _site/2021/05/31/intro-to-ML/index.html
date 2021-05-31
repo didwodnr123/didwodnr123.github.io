@@ -12,40 +12,40 @@
 
     <!-- Open Graph -->
     <meta property="og:title"
-        content="[AI study] Week1: Intro to GAN - Data Science | Jaeuk's Blog">
+        content="[번역] Intro to Machine Learning - Data Science | Jaeuk's Blog">
     
     <meta property="og:type" content="article">
-    <meta property="og:description" content="test
+    <meta property="og:description" content="
+  본 내용은 Kaggle Intro to Machine Learning 을 참고하여 구성하였습니다.
+
 ">
     
-    <meta property="article:published_time" content=" 2021-05-27T00:00:00Z">
+    <meta property="article:published_time" content=" 2021-05-31T00:00:00Z">
     
     
     <meta property="article:author" content="Jaeuk">
     
     
-    <meta property="article:tag" content="AI study">
+    <meta property="article:tag" content="Kaggle">
     
-    <meta property="article:tag" content="week1">
+    <meta property="article:tag" content="ML">
     
-    <meta property="article:tag" content="python">
+    <meta property="article:tag" content="basic">
     
-    <meta property="article:tag" content="paper">
+    <meta property="article:tag" content="micro-course">
     
-    <meta property="article:tag" content="GAN">
+    <meta property="article:tag" content="캐글">
     
-    <meta property="article:tag" content="gan">
-    
-    <meta property="article:tag" content="튜토리얼">
+    <meta property="article:tag" content="코스">
     
     <meta property="article:tag" content="파이썬">
     
     
     <meta property="og:image" content="https://didwodnr123.github.io/img/jaeuk.jpg">
-    <meta property="og:url" content="https://didwodnr123.github.io/2021/05/27/test/">
+    <meta property="og:url" content="https://didwodnr123.github.io/2021/05/31/intro-to-ML/">
     <meta property="og:site_name" content="Data Science | Jaeuk's Blog">
 
-    <title>[AI study] Week1: Intro to GAN - Data Science | Jaeuk's Blog</title>
+    <title>[번역] Intro to Machine Learning - Data Science | Jaeuk's Blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -54,7 +54,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://didwodnr123.github.io/2021/05/27/test/">
+    <link rel="canonical" href="https://didwodnr123.github.io/2021/05/31/intro-to-ML/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href=" /css/bootstrap.min.css">
@@ -124,8 +124,6 @@
                         <li>
                             <a href="/archive/">Archive</a>
                         </li>
-                        
-                        
                         
                         
                         
@@ -248,27 +246,25 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/archive/?tag=AI+study" title="AI study">AI study</a>
+                        <a class="tag" href="/archive/?tag=Kaggle" title="Kaggle">Kaggle</a>
                         
-                        <a class="tag" href="/archive/?tag=week1" title="week1">week1</a>
+                        <a class="tag" href="/archive/?tag=ML" title="ML">ML</a>
                         
-                        <a class="tag" href="/archive/?tag=python" title="python">python</a>
+                        <a class="tag" href="/archive/?tag=basic" title="basic">basic</a>
                         
-                        <a class="tag" href="/archive/?tag=paper" title="paper">paper</a>
+                        <a class="tag" href="/archive/?tag=micro-course" title="micro-course">micro-course</a>
                         
-                        <a class="tag" href="/archive/?tag=GAN" title="GAN">GAN</a>
+                        <a class="tag" href="/archive/?tag=%EC%BA%90%EA%B8%80" title="캐글">캐글</a>
                         
-                        <a class="tag" href="/archive/?tag=gan" title="gan">gan</a>
-                        
-                        <a class="tag" href="/archive/?tag=%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC" title="튜토리얼">튜토리얼</a>
+                        <a class="tag" href="/archive/?tag=%EC%BD%94%EC%8A%A4" title="코스">코스</a>
                         
                         <a class="tag" href="/archive/?tag=%ED%8C%8C%EC%9D%B4%EC%8D%AC" title="파이썬">파이썬</a>
                         
                     </div>
-                    <h1>[AI study] Week1: Intro to GAN</h1>
+                    <h1>[번역] Intro to Machine Learning</h1>
                     
-                    <h2 class="subheading"> "Generative Adversarial Network"</h2>
-                    <span class="meta">Posted by Jaeuk on May 27, 2021</span>
+                    <h2 class="subheading"> "How Models workn"</h2>
+                    <span class="meta">Posted by Jaeuk on May 31, 2021</span>
                 </div>
             </div>
         </div>
@@ -294,52 +290,70 @@
                 <!-- Multi-Lingual -->
                 
 
-				<h1 id="test">test</h1>
+				<blockquote>
+  <p>본 내용은 Kaggle <a href="https://www.kaggle.com/dansbecker/how-models-work">Intro to Machine Learning</a> 을 참고하여 구성하였습니다.</p>
+</blockquote>
 
-<h2 id="test-1">test</h2>
+<p>우연히 유튜브에서 흥미로운 사람을 발견했습니다. Ken Jee 라는 유튜버인데, 데이터 사이언스에 관해 다양한 주제들로 영상을 제작하는 크리에이터 입니다. 이 분 영상 중  “<a href="https://www.youtube.com/watch?v=4OZip0cgOho">How I Would Learn Data Science (If I Had to Start Over)</a>” 을 보면 데이터 사이언티스트를 준비하시는 분들에게 꽤나 도움이 될 것 같습니다. 다른 좋은 영상들도 많이 있으니 참고해보세요! Ken이 추천한 학습 방법 중 하나가 바로 제가 포스팅 할 <strong>Kaggle micro-course</strong> 입니다. Python부터 SQL, ML, DL 까지 상세하게 정리되어 있고, 무엇보다 실습이 있다는 것이 가장 큰 장점입니다.</p>
 
-<h3 id="test-2">test</h3>
+<h2 id="how-models-work">How Models Work</h2>
 
-<h4 id="test-3">test</h4>
+<p><img src="http://i.imgur.com/7tsb5b1.png" alt="First Decision Trees" /></p>
 
-<h3 id="test-4">test</h3>
+<p>간단한 Decision Tree 모양입니다.</p>
 
-<ul>
-  <li>fakdjfalf</li>
-  <li>alfkdsjfa</li>
-  <li>askdfalsf</li>
-</ul>
+<p>이 Decision Tree는 오직 2개의 카테고리로 집들을 분류합니다. 예측된 가격은 같은 카테고리에 있는 집들의 평균 가격 정도로 이해하시면 됩니다.</p>
 
-<h3 id="테스트">테스트</h3>
+<p>사람들은 어떻게 집들을 두 개의 카테고리로 나눌 지 데이터를 사용해서 결정한 후, 각 그룹의 예측 가격을 결정합니다. 데이터로부터 이 패턴을 구성하는 단계를 <strong>Fitting</strong> or <strong>Training</strong> the model 이라 합니다. Model을 Fitting 시키는 데 사용되는 데이터를 <strong>training data</strong>라 합니다.</p>
 
-<ul>
-  <li>테스트 중입니다.</li>
-  <li>테스트 중입니다.</li>
-  <li>테스트 중입니다.</li>
-</ul>
+<p>어떻게 모델이 Fitting 되는 지에 대한 내용은 꽤 복잡하기 때문에 나중에 심화 과정에서 배워도 됩니다. 모델이 한 번 Fitting 되고 나면 새로운 데이터를 사용해서 추가적으로 집 값을 예측할 수 있습니다.</p>
 
-<p>가나다라마바사아자차카타파하 가나다라마바사아자차카 타파하 가나다라마바ㄹㅁ머ㅏ러밀머림러ㅣㅁ러ㅣ머리머리머러미ㅓ리머리머리머리머리머리머리머리ㅓ미러미ㅓ리머리머리머ㅣ러미ㅓ리머리머리멀머리머리머리머리머리머리ㅓ미리먈ㄷㅈ매ㅑ렂;ㅐㅁ댜러;ㅁ재댜렂;ㅐ댜러재댜러재댜러잳랴ㅓㅈ대ㅑ렂대랴ㅓㅈ대랴ㅓㅈ대랻ㅈ</p>
+<h4 id="improving-the-decision-tree">Improving the Decision Tree</h4>
 
-<p>dofijaoqefijqoiefjqoweifjqoweifjqoweifjwqeoifjweqofijqwoefijweoifjwoqfijqoweifjqowiefjqowifjoiwqejfoiwqejfoqwifjoqweifjoweifjowqeifjqwoifejqoiewfjoewifjowifjqoifejoqwiefjoqwiefjqwoiefjoqweijfoidsjfaisjfosdijfaof</p>
+<p><img src="http://i.imgur.com/prAjgku.png" alt="First Decision Trees" /></p>
+
+<p>일반적으로 방이 2개 이상인 집이 더 비쌉니다. 따라서 왼쪽 Tree가 더 논리적으로 맞다는 것을 확인할 수 있습니다. 하지만 이것의 가장 큰 단점은 집들의 다양한 특징들을 고려하지 못한다는 것입니다…</p>
+
+<p><img src="http://i.imgur.com/R3ywQsR.png" alt="Depth 2 Tree" /></p>
+
+<p>따라서 tree를 보다 <strong>Deep</strong> 하게 구성해야 합니다. 이것도 사실은 부족하지만 이해를 돕기에는 충분하다고 생각합니다. 마지막으로 맨 끝에 위치한 박스? 를 <strong>Leaf</strong>라고 합니다.</p>
+
+<h2 id="basic-data-exploration">Basic Data Exploration</h2>
+
+<h4 id="using-pandas-to-get-familiar-with-your-data">Using Pandas to Get Familiar With Your Data</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>판다스 라이브러리 중 가장 중요한 것은 DataFrame 입니다. 데이터프레임은 데이터를 엑셀 표 처럼 구성해주는 역할을 합니다. 지금부터 Melbourne, Australia의 집값 데이터를 활용해서 pandas를 사용해보겠습니다.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="c1"># save filepath to variable for easier access
+</span><span class="n">melbourne_file_path</span> <span class="o">=</span> <span class="s">'./data/melb_data.csv'</span>
+<span class="c1"># read the data and store data in DataFrame titled melbourne_data
+</span><span class="n">melbourne_data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">melbourne_file_path</span><span class="p">)</span> 
+<span class="c1"># print a summary of the data in Melbourne data
+</span><span class="n">melbourne_data</span><span class="p">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
 
 
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/2021/05/27/basic-classification/" data-toggle="tooltip" data-placement="top" title="[Tutorial] Keras: Basic classification">
-                        Previous<br>
-                        <span>[Tutorial] Keras: Basic classification</span>
-                        </a>
-                    </li>
-                    
-                    
-                    <li class="next">
                         <a href="/2021/05/27/week1/" data-toggle="tooltip" data-placement="top" title="[AI study] Week1: Intro to GAN">
-                        Next<br>
+                        Previous<br>
                         <span>[AI study] Week1: Intro to GAN</span>
                         </a>
                     </li>
+                    
                     
                 </ul>
                 <hr style="visibility: hidden;">
@@ -388,15 +402,10 @@
         
         
         
-                <a data-sort="0001" 
+                <a data-sort="0002" 
                     href="/archive/?tag=python"
                     title="python"
-                    rel="3">python</a>
-        
-                <a data-sort="0001" 
-                    href="/archive/?tag=%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC"
-                    title="튜토리얼"
-                    rel="3">튜토리얼</a>
+                    rel="2">python</a>
         
                 <a data-sort="0001" 
                     href="/archive/?tag=%ED%8C%8C%EC%9D%B4%EC%8D%AC"
@@ -404,29 +413,9 @@
                     rel="3">파이썬</a>
         
                 <a data-sort="0002" 
-                    href="/archive/?tag=AI+study"
-                    title="AI study"
-                    rel="2">AI study</a>
-        
-                <a data-sort="0002" 
-                    href="/archive/?tag=GAN"
-                    title="GAN"
-                    rel="2">GAN</a>
-        
-                <a data-sort="0002" 
-                    href="/archive/?tag=gan"
-                    title="gan"
-                    rel="2">gan</a>
-        
-                <a data-sort="0002" 
-                    href="/archive/?tag=paper"
-                    title="paper"
-                    rel="2">paper</a>
-        
-                <a data-sort="0002" 
-                    href="/archive/?tag=week1"
-                    title="week1"
-                    rel="2">week1</a>
+                    href="/archive/?tag=%ED%8A%9C%ED%86%A0%EB%A6%AC%EC%96%BC"
+                    title="튜토리얼"
+                    rel="2">튜토리얼</a>
     </div>
 </section>
 

@@ -5,13 +5,93 @@
     <description>Data Science | ML/DL | Data engineering</description>
     <link>https://didwodnr123.github.io/</link>
     <atom:link href="https://didwodnr123.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Fri, 28 May 2021 00:24:41 +0900</pubDate>
-    <lastBuildDate>Fri, 28 May 2021 00:24:41 +0900</lastBuildDate>
+    <pubDate>Mon, 31 May 2021 19:23:19 +0900</pubDate>
+    <lastBuildDate>Mon, 31 May 2021 19:23:19 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
+        <title>[번역] Intro to Machine Learning</title>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;본 내용은 Kaggle &lt;a href=&quot;https://www.kaggle.com/dansbecker/how-models-work&quot;&gt;Intro to Machine Learning&lt;/a&gt; 을 참고하여 구성하였습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;우연히 유튜브에서 흥미로운 사람을 발견했습니다. Ken Jee 라는 유튜버인데, 데이터 사이언스에 관해 다양한 주제들로 영상을 제작하는 크리에이터 입니다. 이 분 영상 중  “&lt;a href=&quot;https://www.youtube.com/watch?v=4OZip0cgOho&quot;&gt;How I Would Learn Data Science (If I Had to Start Over)&lt;/a&gt;” 을 보면 데이터 사이언티스트를 준비하시는 분들에게 꽤나 도움이 될 것 같습니다. 다른 좋은 영상들도 많이 있으니 참고해보세요! Ken이 추천한 학습 방법 중 하나가 바로 제가 포스팅 할 &lt;strong&gt;Kaggle micro-course&lt;/strong&gt; 입니다. Python부터 SQL, ML, DL 까지 상세하게 정리되어 있고, 무엇보다 실습이 있다는 것이 가장 큰 장점입니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;how-models-work&quot;&gt;How Models Work&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/7tsb5b1.png&quot; alt=&quot;First Decision Trees&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;간단한 Decision Tree 모양입니다.&lt;/p&gt;
+
+&lt;p&gt;이 Decision Tree는 오직 2개의 카테고리로 집들을 분류합니다. 예측된 가격은 같은 카테고리에 있는 집들의 평균 가격 정도로 이해하시면 됩니다.&lt;/p&gt;
+
+&lt;p&gt;사람들은 어떻게 집들을 두 개의 카테고리로 나눌 지 데이터를 사용해서 결정한 후, 각 그룹의 예측 가격을 결정합니다. 데이터로부터 이 패턴을 구성하는 단계를 &lt;strong&gt;Fitting&lt;/strong&gt; or &lt;strong&gt;Training&lt;/strong&gt; the model 이라 합니다. Model을 Fitting 시키는 데 사용되는 데이터를 &lt;strong&gt;training data&lt;/strong&gt;라 합니다.&lt;/p&gt;
+
+&lt;p&gt;어떻게 모델이 Fitting 되는 지에 대한 내용은 꽤 복잡하기 때문에 나중에 심화 과정에서 배워도 됩니다. 모델이 한 번 Fitting 되고 나면 새로운 데이터를 사용해서 추가적으로 집 값을 예측할 수 있습니다.&lt;/p&gt;
+
+&lt;h4 id=&quot;improving-the-decision-tree&quot;&gt;Improving the Decision Tree&lt;/h4&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/prAjgku.png&quot; alt=&quot;First Decision Trees&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;일반적으로 방이 2개 이상인 집이 더 비쌉니다. 따라서 왼쪽 Tree가 더 논리적으로 맞다는 것을 확인할 수 있습니다. 하지만 이것의 가장 큰 단점은 집들의 다양한 특징들을 고려하지 못한다는 것입니다…&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://i.imgur.com/R3ywQsR.png&quot; alt=&quot;Depth 2 Tree&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;따라서 tree를 보다 &lt;strong&gt;Deep&lt;/strong&gt; 하게 구성해야 합니다. 이것도 사실은 부족하지만 이해를 돕기에는 충분하다고 생각합니다. 마지막으로 맨 끝에 위치한 박스? 를 &lt;strong&gt;Leaf&lt;/strong&gt;라고 합니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;basic-data-exploration&quot;&gt;Basic Data Exploration&lt;/h2&gt;
+
+&lt;h4 id=&quot;using-pandas-to-get-familiar-with-your-data&quot;&gt;Using Pandas to Get Familiar With Your Data&lt;/h4&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;pandas&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;판다스 라이브러리 중 가장 중요한 것은 DataFrame 입니다. 데이터프레임은 데이터를 엑셀 표 처럼 구성해주는 역할을 합니다. 지금부터 Melbourne, Australia의 집값 데이터를 활용해서 pandas를 사용해보겠습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
+2
+3
+4
+5
+6
+&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;c1&quot;&gt;# save filepath to variable for easier access
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;melbourne_file_path&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;./data/melb_data.csv&apos;&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# read the data and store data in DataFrame titled melbourne_data
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;melbourne_data&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pd&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;read_csv&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;melbourne_file_path&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; 
+&lt;span class=&quot;c1&quot;&gt;# print a summary of the data in Melbourne data
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;melbourne_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;describe&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+</description>
+        <pubDate>Mon, 31 May 2021 00:00:00 +0900</pubDate>
+        <link>https://didwodnr123.github.io/2021/05/31/intro-to-ML/</link>
+        <guid isPermaLink="true">https://didwodnr123.github.io/2021/05/31/intro-to-ML/</guid>
+        
+        <category>Kaggle</category>
+        
+        <category>ML</category>
+        
+        <category>basic</category>
+        
+        <category>micro-course</category>
+        
+        <category>캐글</category>
+        
+        <category>코스</category>
+        
+        <category>파이썬</category>
+        
+        
+      </item>
+    
+      <item>
         <title>[AI study] Week1: Intro to GAN</title>
-        <description>&lt;p&gt;지난주, Coursera Andrew Ng 교수님의 Deep learning specialization을 마무리했습니다. 이번주부터는 굉장히 섬세한 fake 이미지를 생성할 수 있는 GAN 모델을 다루는 강의를 시청하고 리뷰할 예정입니다.&lt;/p&gt;
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;본 내용은 Coursera &lt;a href=&quot;https://www.coursera.org/programs/96b56ed6-2c7a-4373-92df-2d467731559d/browse?currentTab=CATALOG&amp;amp;productId=I7xTyNLAEeqdUQo9B2YGiw&amp;amp;productType=s12n&amp;amp;query=GAN&amp;amp;showMiniModal=true&quot;&gt;Build Basic Generative Adversarial Networks (GANs)&lt;/a&gt; Lecture 기반으로 구성했습니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;지난주, Coursera Andrew Ng 교수님의 Deep learning specialization을 마무리했습니다. 이번주부터는 굉장히 섬세한 fake 이미지를 생성할 수 있는 GAN 모델을 다루는 강의를 시청하고 리뷰할 예정입니다.&lt;/p&gt;
 
 &lt;p&gt;GAN 이란 Generative Adverarial Network의 약자로, 하나의 모델이 가짜 이미지를 생성하고 다른 모델이 진짜 이미지와 가짜 이미지를 구분? 하면서 Generator 모델이 더욱 완벽한 fake 이미지를 만들 수 있도록 training 합니다.&lt;/p&gt;
 
@@ -184,6 +264,10 @@
 
 &lt;p&gt;&lt;img src=&quot;/img/AI_study/pytorch_vs_tensorflow.png&quot; alt=&quot;GAN&quot; /&gt;&lt;/p&gt;
 
+&lt;p&gt;&lt;img src=&quot;https://github.com/didwodnr123/didwodnr123.github.io/blob/main/img/AI_study/5.PNG?raw=true&quot; alt=&quot;GAN1&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://github.com/didwodnr123/didwodnr123.github.io/blob/main/img/AI_study/6.PNG?raw=true&quot; alt=&quot;GAN2&quot; /&gt;&lt;/p&gt;
+
 &lt;h4 id=&quot;summary-7&quot;&gt;Summary&lt;/h4&gt;
 
 &lt;ul&gt;
@@ -196,59 +280,6 @@
         <pubDate>Thu, 27 May 2021 00:00:00 +0900</pubDate>
         <link>https://didwodnr123.github.io/2021/05/27/week1/</link>
         <guid isPermaLink="true">https://didwodnr123.github.io/2021/05/27/week1/</guid>
-        
-        <category>AI study</category>
-        
-        <category>week1</category>
-        
-        <category>python</category>
-        
-        <category>paper</category>
-        
-        <category>GAN</category>
-        
-        <category>gan</category>
-        
-        <category>튜토리얼</category>
-        
-        <category>파이썬</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>[AI study] Week1: Intro to GAN</title>
-        <description>&lt;h1 id=&quot;test&quot;&gt;test&lt;/h1&gt;
-
-&lt;h2 id=&quot;test-1&quot;&gt;test&lt;/h2&gt;
-
-&lt;h3 id=&quot;test-2&quot;&gt;test&lt;/h3&gt;
-
-&lt;h4 id=&quot;test-3&quot;&gt;test&lt;/h4&gt;
-
-&lt;h3 id=&quot;test-4&quot;&gt;test&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;fakdjfalf&lt;/li&gt;
-  &lt;li&gt;alfkdsjfa&lt;/li&gt;
-  &lt;li&gt;askdfalsf&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&quot;테스트&quot;&gt;테스트&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;테스트 중입니다.&lt;/li&gt;
-  &lt;li&gt;테스트 중입니다.&lt;/li&gt;
-  &lt;li&gt;테스트 중입니다.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;가나다라마바사아자차카타파하 가나다라마바사아자차카 타파하 가나다라마바ㄹㅁ머ㅏ러밀머림러ㅣㅁ러ㅣ머리머리머러미ㅓ리머리머리머리머리머리머리머리ㅓ미러미ㅓ리머리머리머ㅣ러미ㅓ리머리머리멀머리머리머리머리머리머리ㅓ미리먈ㄷㅈ매ㅑ렂;ㅐㅁ댜러;ㅁ재댜렂;ㅐ댜러재댜러재댜러잳랴ㅓㅈ대ㅑ렂대랴ㅓㅈ대랴ㅓㅈ대랻ㅈ&lt;/p&gt;
-
-&lt;p&gt;dofijaoqefijqoiefjqoweifjqoweifjqoweifjwqeoifjweqofijqwoefijweoifjwoqfijqoweifjqowiefjqowifjoiwqejfoiwqejfoqwifjoqweifjoweifjowqeifjqwoifejqoiewfjoewifjowifjqoifejoqwiefjoqwiefjqwoiefjoqweijfoidsjfaisjfosdijfaof&lt;/p&gt;
-</description>
-        <pubDate>Thu, 27 May 2021 00:00:00 +0900</pubDate>
-        <link>https://didwodnr123.github.io/2021/05/27/test/</link>
-        <guid isPermaLink="true">https://didwodnr123.github.io/2021/05/27/test/</guid>
         
         <category>AI study</category>
         
