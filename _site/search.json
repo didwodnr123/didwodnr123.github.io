@@ -3,7 +3,7 @@
     {
       "title"    : "[번역] Intro to Machine Learning",
       "subtitle" : " &quot;How Models workn&quot;",
-      "tags"     : "Kaggle, ML, basic, micro-course, 캐글, 코스, 파이썬",
+      "tags"     : "Translation, Kaggle",
       "url"      : "/2021/05/31/intro-to-ML/",
       "date"     : "2021-05-31 00:00:00 +0900"
     } ,
@@ -11,25 +11,9 @@
     {
       "title"    : "[AI study] Week1: Intro to GAN",
       "subtitle" : " &quot;Generative Adversarial Network&quot;",
-      "tags"     : "AI study, week1, python, paper, GAN, gan, 튜토리얼, 파이썬",
+      "tags"     : "AI Study, GAN",
       "url"      : "/2021/05/27/week1/",
       "date"     : "2021-05-27 00:00:00 +0900"
-    } ,
-  
-    {
-      "title"    : "[Tutorial] Keras: Basic classification",
-      "subtitle" : " &quot;Classify images of clothing&quot;",
-      "tags"     : "tutorial, python, tensorflow, keras, classification, image, fashion mnist, 튜토리얼, 파이썬, 이미지 분류, 케라스, 텐서플로우",
-      "url"      : "/2021/05/27/basic-classification/",
-      "date"     : "2021-05-27 00:00:00 +0900"
-    } ,
-  
-    {
-      "title"    : "Hello Blog",
-      "subtitle" : " &quot;Hello World, Hello Blog&quot;",
-      "tags"     : "New, Blog",
-      "url"      : "/2021/05/26/Hello-Blog/",
-      "date"     : "2021-05-26 22:00:00 +0900"
     } 
   
 ]

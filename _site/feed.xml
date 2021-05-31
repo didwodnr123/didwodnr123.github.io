@@ -5,8 +5,8 @@
     <description>Data Science | ML/DL | Data engineering</description>
     <link>https://didwodnr123.github.io/</link>
     <atom:link href="https://didwodnr123.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Mon, 31 May 2021 19:23:19 +0900</pubDate>
-    <lastBuildDate>Mon, 31 May 2021 19:23:19 +0900</lastBuildDate>
+    <pubDate>Mon, 31 May 2021 22:55:53 +0900</pubDate>
+    <lastBuildDate>Mon, 31 May 2021 22:55:53 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
@@ -68,19 +68,9 @@
         <link>https://didwodnr123.github.io/2021/05/31/intro-to-ML/</link>
         <guid isPermaLink="true">https://didwodnr123.github.io/2021/05/31/intro-to-ML/</guid>
         
+        <category>Translation</category>
+        
         <category>Kaggle</category>
-        
-        <category>ML</category>
-        
-        <category>basic</category>
-        
-        <category>micro-course</category>
-        
-        <category>캐글</category>
-        
-        <category>코스</category>
-        
-        <category>파이썬</category>
         
         
       </item>
@@ -281,101 +271,9 @@
         <link>https://didwodnr123.github.io/2021/05/27/week1/</link>
         <guid isPermaLink="true">https://didwodnr123.github.io/2021/05/27/week1/</guid>
         
-        <category>AI study</category>
-        
-        <category>week1</category>
-        
-        <category>python</category>
-        
-        <category>paper</category>
+        <category>AI Study</category>
         
         <category>GAN</category>
-        
-        <category>gan</category>
-        
-        <category>튜토리얼</category>
-        
-        <category>파이썬</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>[Tutorial] Keras: Basic classification</title>
-        <description>&lt;blockquote&gt;
-  &lt;p&gt;&lt;a href=&quot;https://www.tensorflow.org/tutorials/keras/classification&quot;&gt;튜토리얼 출처: TensorFlow&lt;/a&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;h3 id=&quot;keras&quot;&gt;Keras&lt;/h3&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;a high-level API to build and train models in TensorFlow.&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-2
-3
-4
-5
-6
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;tensorflow&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;
-
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
-&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;matplotlib.pyplot&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;plt&lt;/span&gt;
-
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;tf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;__version__&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-</description>
-        <pubDate>Thu, 27 May 2021 00:00:00 +0900</pubDate>
-        <link>https://didwodnr123.github.io/2021/05/27/basic-classification/</link>
-        <guid isPermaLink="true">https://didwodnr123.github.io/2021/05/27/basic-classification/</guid>
-        
-        <category>tutorial</category>
-        
-        <category>python</category>
-        
-        <category>tensorflow</category>
-        
-        <category>keras</category>
-        
-        <category>classification</category>
-        
-        <category>image</category>
-        
-        <category>fashion mnist</category>
-        
-        <category>튜토리얼</category>
-        
-        <category>파이썬</category>
-        
-        <category>이미지 분류</category>
-        
-        <category>케라스</category>
-        
-        <category>텐서플로우</category>
-        
-        
-      </item>
-    
-      <item>
-        <title>Hello Blog</title>
-        <description>&lt;h1 id=&quot;this-is-heading&quot;&gt;This is Heading&lt;/h1&gt;
-&lt;h2 id=&quot;this-is-heading-1&quot;&gt;This is heading&lt;/h2&gt;
-&lt;h3 id=&quot;this-is-heading-2&quot;&gt;This is heading&lt;/h3&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;table class=&quot;rouge-table&quot;&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;rouge-gutter gl&quot;&gt;&lt;pre class=&quot;lineno&quot;&gt;1
-&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;rouge-code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;hello world&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-</description>
-        <pubDate>Wed, 26 May 2021 22:00:00 +0900</pubDate>
-        <link>https://didwodnr123.github.io/2021/05/26/Hello-Blog/</link>
-        <guid isPermaLink="true">https://didwodnr123.github.io/2021/05/26/Hello-Blog/</guid>
-        
-        <category>New</category>
-        
-        <category>Blog</category>
         
         
       </item>

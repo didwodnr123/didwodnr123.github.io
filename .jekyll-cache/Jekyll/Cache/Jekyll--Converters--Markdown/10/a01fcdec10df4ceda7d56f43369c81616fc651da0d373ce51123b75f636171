@@ -1,9 +1,0 @@
-I"<h1 id="this-is-heading">This is Heading</h1>
-<h2 id="this-is-heading-1">This is heading</h2>
-<h3 id="this-is-heading-2">This is heading</h3>
-
-<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
-</pre></td><td class="rouge-code"><pre><span class="k">print</span><span class="p">(</span><span class="s">'hello world'</span><span class="p">)</span>
-</pre></td></tr></tbody></table></code></pre></div></div>
-
-:ET

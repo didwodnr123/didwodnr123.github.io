@@ -6,13 +6,8 @@ author:     "Jaeuk"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
+    - Translation
     - Kaggle
-    - ML
-    - basic
-    - micro-course
-    - 캐글
-    - 코스
-    - 파이썬
 ---
 
 > 본 내용은 Kaggle [Intro to Machine Learning](https://www.kaggle.com/dansbecker/how-models-work) 을 참고하여 구성하였습니다.

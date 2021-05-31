@@ -6,18 +6,8 @@ author:     "Jaeuk"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
 tags:
-    - tutorial
-    - python
-    - tensorflow
-    - keras
-    - classification
-    - image
-    - fashion mnist
-    - 튜토리얼
-    - 파이썬
-    - 이미지 분류
-    - 케라스
-    - 텐서플로우
+    - Tutorial
+    - Keras
 ---
 
 
