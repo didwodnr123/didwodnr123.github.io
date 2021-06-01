@@ -12,17 +12,30 @@
 
     <!-- Open Graph -->
     <meta property="og:title"
-        content="About - Data Science | Jaeuk's Blog">
+        content="[AI study] Week1: Intro to GAN - Data Science | Jaeuk's Blog">
     
-    <meta property="og:type" content="website">
-    <meta property="og:description"
-        content="[Jaeuk Yang]">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="
+  본 내용은 Coursera Build Basic Generative Adversarial Networks (GANs) Lecture 기반으로 구성했습니다.
+
+">
+    
+    <meta property="article:published_time" content=" 2021-05-27T00:00:00Z">
+    
+    
+    <meta property="article:author" content="Jaeuk">
+    
+    
+    <meta property="article:tag" content="AI Study">
+    
+    <meta property="article:tag" content="GAN">
+    
     
     <meta property="og:image" content="https://didwodnr123.github.io/img/jaeuk.jpg">
-    <meta property="og:url" content="https://didwodnr123.github.io/about/">
+    <meta property="og:url" content="https://didwodnr123.github.io/week1.html">
     <meta property="og:site_name" content="Data Science | Jaeuk's Blog">
 
-    <title>About - Data Science | Jaeuk's Blog</title>
+    <title>[AI study] Week1: Intro to GAN - Data Science | Jaeuk's Blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -31,7 +44,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://didwodnr123.github.io/about/">
+    <link rel="canonical" href="https://didwodnr123.github.io/week1.html">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href=" /css/bootstrap.min.css">
@@ -93,13 +106,13 @@
                         
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/about.html">About</a>
                         </li>
                         
                         
                         
                         <li>
-                            <a href="/archive/">Archive</a>
+                            <a href="/archive.html">Archive</a>
                         </li>
                         
                         
@@ -197,154 +210,308 @@
   </div>
 </div>
 
-    <!-- Page Header -->
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/post-bg-2015.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
 
 
 
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/post-bg-2015.jpg');
+        background: ;
+    }
 
+    
+</style>
 
+<header class="intro-header" >
 
-
-<header class="intro-header" style="background-image: url('/img/about-bg.jpg')">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="site-heading">
-        
-          <h1>About</h1>
-          <span class="subheading">[Jaeuk Yang]</span>
+    <div class="header-mask"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/archive/?tag=AI+Study" title="AI Study">AI Study</a>
+                        
+                        <a class="tag" href="/archive/?tag=GAN" title="GAN">GAN</a>
+                        
+                    </div>
+                    <h1>[AI study] Week1: Intro to GAN</h1>
+                    
+                    <h2 class="subheading"> "Generative Adversarial Network"</h2>
+                    <span class="meta">Posted by Jaeuk on May 27, 2021</span>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </header>
 
 
-<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    
-
-    <!-- USE SIDEBAR -->
-    <!-- PostList Container -->
-    <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12
-      col-xs-12 postlist-container">
-                      <!-- Language Selector -->
-                <!-- <select class="sel-lang" onchange= "onLanChange(this.options[this.options.selectedIndex].value)"> -->
-                    <!-- <option value="0" selected> English </option> -->
-                    <!-- <option value="1"> 英文 | English </option> -->
-                <!-- </select> -->
 
 
 
-<!-- Chinese Version -->
-<div class="zh post-container">
-    
-    <!-- Hi，我是黄玄，前端娱乐圈 NPC，编程语言/编译器初心者，[Facebook](https://www.facebook.com/) 签约软件工程师，[广院](https://baike.baidu.com/item/%E4%B8%AD%E5%9B%BD%E4%BC%A0%E5%AA%92%E5%A4%A7%E5%AD%A6)认证数字设计师，曾被招募为阿里巴巴 · [阿里旅行（飞猪）](http://alitrip.com)· 前端工程师、微影时代 · 微票儿 · 前端基础设施工程团队负责人、[饿了么](https://ele.me/) · 大前端团队 · [PWA 顾问](https://medium.com/elemefe/upgrading-ele-me-to-progressive-web-app-2a446832e509) 等。
 
-目前的物理活动范围主要在美帝硅谷，分身日常出没于[博客](https://huangxuan.me)、[微博](https://weibo.com/huxpro)、[知乎](https://www.zhihu.com/people/huxpro/pins/posts)、[Twitter](https://twitter.com/Huxpro/)、[Github](https://github.com/huxpro)、[Medium](https://medium.com/@Huxpro)。
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
 
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
 
-##### [我的编程语言可视化 (WIP 🚧)](https://huangxuan.me/2020/05/05/pl-chart/)
+                <!-- Multi-Lingual -->
+                
 
-这个图表可视化了我对于各种编程语言的使用经历、兴趣，还附带了一些评语和解释等等。 啊我知道对比编程语言是一件很有争议的事情……自娱自乐一下！不要太较真哦 ;)
+				<blockquote>
+  <p>본 내용은 Coursera <a href="https://www.coursera.org/programs/96b56ed6-2c7a-4373-92df-2d467731559d/browse?currentTab=CATALOG&amp;productId=I7xTyNLAEeqdUQo9B2YGiw&amp;productType=s12n&amp;query=GAN&amp;showMiniModal=true">Build Basic Generative Adversarial Networks (GANs)</a> Lecture 기반으로 구성했습니다.</p>
+</blockquote>
 
+<p>지난주, Coursera Andrew Ng 교수님의 Deep learning specialization을 마무리했습니다. 이번주부터는 굉장히 섬세한 fake 이미지를 생성할 수 있는 GAN 모델을 다루는 강의를 시청하고 리뷰할 예정입니다.</p>
 
-##### 演讲与分享
+<p>GAN 이란 Generative Adverarial Network의 약자로, 하나의 모델이 가짜 이미지를 생성하고 다른 모델이 진짜 이미지와 가짜 이미지를 구분? 하면서 Generator 모델이 더욱 완벽한 fake 이미지를 만들 수 있도록 training 합니다.</p>
 
-- [Upgrading to Progressive Web Apps][9] · [JSConf CN 上海 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI 广州 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux 北京 2017
-- 炒冷饭 · PWA 到底是个什么玩意？· Baidu HQ 北京 2017
-- [Service Worker 101][5] · GDG DevFest 北京 2016
-- [Progressive Web App，复兴序章][4] · [QCon 上海 2016](http://2016.qconshanghai.com/presentation/3111)
-- Progressive Web App 之我见 · GDG IO Redux 北京 2016
-- [CSS Still Sucks 2015][2] · 2015
-- [JavaScript 模块化七日谈][1] · 2015
+<h2 id="generative-models">Generative Models</h2>
 
-[1]: //huangxuan.me/2015/07/09/js-module-7day/
-[2]: //huangxuan.me/2015/12/28/css-sucks-2015/
-[3]: //huangxuan.me/2016/06/05/pwa-in-my-pov/
-[4]: //huangxuan.me/2016/10/20/pwa-qcon2016/
-[5]: //huangxuan.me/2016/11/20/sw-101-gdgdf/
-[6]: https://yanshuo.io/assets/player/?deck=58ac8598b123db0067292f92 "PWA Rehashing"
-[7]: https://yanshuo.io/assets/player/?deck=593ad6fbfe88c2006a0a0d6d "The State of PWA"
-[8]: https://yanshuo.io/assets/player/?deck=594d673d570c357d0698a950 "Building PWA"
-[9]: //huangxuan.me/jsconfcn2017/ -->
+<p><img src="/img/AI_study/gan1.png" alt="GAN" style="zoom:50%;" /></p>
 
-</div>
-
-<!-- English Version -->
-<div class="en post-container">
-    
-    <h3 id="aspiring-a-data-scientist-">Aspiring a Data Scientist 👋</h3>
+<p><strong>Generator</strong></p>
 
 <ul>
-  <li>🔎  Info …
-    <ul>
-      <li>Jaeuk Yang (26)</li>
-      <li>studying <strong><em>Data-Science</em></strong></li>
-    </ul>
+  <li>Random noise를 input에 주고 fake image를 생성합니다.</li>
+</ul>
+
+<p><strong>Discriminator</strong></p>
+
+<ul>
+  <li>Real image를 input에 주고 학습시킵니다.</li>
+</ul>
+
+<p>학습이 완료되면 Random Noise를 input으로 Generator에 주게 되면 정교한 fake 이미지를 생성하게 됩니다. 그리고 위 모델들이 경쟁하며 성능을 향상시키는 구조를 갖고 있습니다.</p>
+
+<h4 id="summary">Summary</h4>
+
+<ul>
+  <li>Generative models learn to produce <strong>realistic</strong> examples</li>
+  <li>Discriminative models distinguish between classes</li>
+</ul>
+
+<h2 id="real-life-gans">Real Life GANs</h2>
+
+<p>Ian Goodfellow is known as the creator of the GAN.</p>
+
+<p>not limited to human faces</p>
+
+<p>image translation : horse to zebra, vice versa</p>
+
+<p>draw something -&gt; able to produce realistic image</p>
+
+<p>Monariza -&gt; moving</p>
+
+<p>Companies Using GANs</p>
+
+<ul>
+  <li>Adobe</li>
+  <li>Google (text generation)</li>
+  <li>IBM (data augmentation) : x enough data -&gt; augmentation</li>
+  <li>whatever you like</li>
+</ul>
+
+<h4 id="summary-1">Summary</h4>
+
+<ul>
+  <li>GANs’ performance is rapidly improving</li>
+  <li>Huge opportunity to work in this space!</li>
+  <li>Major companies are using them</li>
+</ul>
+
+<h2 id="intuition-behind-gans">Intuition Behind GANs</h2>
+
+<h4 id="outline">Outline</h4>
+
+<ul>
+  <li>
+    <p>the goal of the generator and the discriminator</p>
   </li>
-  <li>🌱  I’m currently learning …
-    <ul>
-      <li>Python</li>
-      <li>Exploratory Data Analysis</li>
-      <li>Feature Engineering</li>
-      <li>Data Visualization</li>
-      <li>ML/DL</li>
-    </ul>
-  </li>
-  <li>🌱  I’ve learned …
-    <ul>
-      <li>iOS app develop, <strong><em>Swift</em></strong></li>
-      <li>Mobile App back-end, <strong><em>Node.js</em></strong></li>
-    </ul>
-  </li>
-  <li>📫  How to reach me: …
-    <ul>
-      <li>email: didwodnr123@gmail.com</li>
-    </ul>
+  <li>
+    <p>the competition between them</p>
   </li>
 </ul>
 
-<!-- ##### Appearence
+<p>Generator : learn to make fakes that look real</p>
 
-- [Upgrading to Progressive Web Apps][9] · [JSConf China Shanghai 2017](http://2017.jsconf.cn/)
-- Building Progressive Web Apps · [CSDI Guangzhou 2017](http://www.csdisummit.com/)
-- The State of Progressive Web App · GDG IO Redux Beijing 2017
-- PWA Rehashing · Baidu HQ Beijing 2017
-- [Service Worker 101][5] · GDG DevFest Beijing 2016
-- [Progressive Web Apps][4] · QCon Shanghai 2016
-- Progressive Web App in my POV · GDG IO Redux Beijing 2016
-- [CSS Still Sucks 2015][2] · 2015
-- [JavaScript Modularization Journey][1] · 2015
+<p>Discriminator : learns to distinguish real from fake</p>
 
-[1]: //huangxuan.me/2015/07/09/js-module-7day/
-[2]: //huangxuan.me/2015/12/28/css-sucks-2015/
-[3]: //huangxuan.me/2016/06/05/pwa-in-my-pov/
-[4]: //huangxuan.me/2016/10/20/pwa-qcon2016/
-[5]: //huangxuan.me/2016/11/20/sw-101-gdgdf/
-[6]: https://yanshuo.io/assets/player/?deck=58ac8598b123db0067292f92 "PWA Rehashing"
-[7]: https://yanshuo.io/assets/player/?deck=593ad6fbfe88c2006a0a0d6d "The State of PWA"
-[8]: https://yanshuo.io/assets/player/?deck=594d673d570c357d0698a950 "Building PWA"
-[9]: //huangxuan.me/jsconfcn2017/ -->
+<p>First, train a discriminator</p>
 
-</div>
+<h4 id="summary-2">Summary</h4>
+
+<ul>
+  <li>The <strong>generator’s</strong> goal is to fool the discriminator</li>
+  <li>The <strong>discriminator’s</strong> goal is to distinguish between real and fake</li>
+  <li>They learn from the competition with each other</li>
+  <li>At the end, <strong>fakes</strong> look <strong>real</strong></li>
+</ul>
+
+<h2 id="discriminator">Discriminator</h2>
+
+<h4 id="outline-1">Outline</h4>
+
+<ul>
+  <li>Review of classifiers</li>
+  <li>The role of classifiers in terms of probability</li>
+  <li>Discriminator</li>
+</ul>
+
+<p>Discriminator : Distinguish between different classes</p>
+
+<h4 id="summary-3">Summary</h4>
+
+<ul>
+  <li>The <strong>discriminator</strong> is a classifier</li>
+  <li>It learns the probability of class Y (<strong>real</strong> or <strong>fake</strong>) given features X</li>
+  <li>The probabilities are the feedback for the <strong>generator</strong></li>
+</ul>
+
+<h2 id="generator">Generator</h2>
+
+<h4 id="outline-2">Outline</h4>
+
+<ul>
+  <li>What the generator does</li>
+  <li>How it improves its performance</li>
+  <li>Generator in terms of probability</li>
+</ul>
+
+<p>Noise vector - different output</p>
+
+<p>Noise -&gt; <strong>Generator</strong> -&gt; Features(X hat) -&gt; **Discriminator ** -&gt; Output (Y hat) -&gt; Cost -&gt; update Generator’s Parameters</p>
+
+<h4 id="summary-4">Summary</h4>
+
+<ul>
+  <li>The <strong>Generator</strong> produces fake data</li>
+  <li>It learns the probability of features X</li>
+  <li>The <strong>Generator</strong> takes as input noise (random features)</li>
+</ul>
+
+<h2 id="bce-cost-function">BCE Cost Function</h2>
+
+<h4 id="outline-3">Outline</h4>
+
+<ul>
+  <li>Binary Cross Entropy(BCE) Loss equation by parts</li>
+  <li>How it looks graphically</li>
+</ul>
+
+<h4 id="summary-5">Summary</h4>
+
+<ul>
+  <li>The BCE cost function has two parts (one relevant for each class)</li>
+  <li>Close to zero when label and the prediction are similar</li>
+  <li>Approaches infinity when the label and the prediction are different</li>
+</ul>
+
+<h2 id="putting-it-all-together">Putting It All Together</h2>
+
+<h4 id="outline-4">Outline</h4>
+
+<ul>
+  <li>How the whole architecture looks</li>
+  <li>How to train GANs</li>
+</ul>
+
+<h4 id="summary-6">Summary</h4>
+
+<ul>
+  <li>GANs train in an alternating fashion</li>
+  <li>The two models should always be at a similar “skill” level</li>
+</ul>
+
+<h2 id="intro-to-pytorch">Intro to PyTorch</h2>
+
+<h4 id="outline-5">Outline</h4>
+
+<ul>
+  <li>Comparison with TensorFlow</li>
+  <li>Dfining Models</li>
+  <li>Training</li>
+</ul>
+
+<p><img src="/img/AI_study/pytorch_vs_tensorflow.png" alt="GAN" /></p>
+
+<p><img src="https://github.com/didwodnr123/didwodnr123.github.io/blob/main/img/AI_study/5.PNG?raw=true" alt="GAN1" /></p>
+
+<p><img src="https://github.com/didwodnr123/didwodnr123.github.io/blob/main/img/AI_study/6.PNG?raw=true" alt="GAN2" /></p>
+
+<h4 id="summary-7">Summary</h4>
+
+<ul>
+  <li>PyTorch makes computations on the run</li>
+  <li>Dynamic computational graphs in PyTorch</li>
+  <li><strong>Just another framework, and similar to Tensorflow!</strong></li>
+</ul>
 
 
 
+                <hr style="visibility: hidden;">
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/intro-to-ML.html" data-toggle="tooltip" data-placement="top" title="[번역] Intro to Machine Learning">
+                        Next<br>
+                        <span>[번역] Intro to Machine Learning</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <hr style="visibility: hidden;">
 
-    </div>
+                
+
+                
+            </div>  
+
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
     <!-- Sidebar Container -->
-    <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12
-      col-xs-12 sidebar-container">
-      <!-- Featured Tags -->
-      
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
 
 
 <section>
+    
+        <hr class="hidden-sm hidden-xs">
     
     <h5><a href="/archive/">FEATURED TAGS</a></h5>
     <div class="tags">
@@ -357,46 +524,8 @@
 </section>
 
 
-      <!-- Short About -->
-      <section class="visible-md visible-lg">
-  <hr>
-  <h5><a href="/about/">ABOUT ME</a></h5>
-  <div class="short-about">
-    
-    <img src="/img/jaeuk.jpg" />
-    
-    
-    <p>Aspiring data scientist <br> | ML/DL Engineer <br> | Data Engineer.</p>
-    
-    <!-- SNS Link -->
-    
-
-
-<ul class="list-inline">
-
-
-  
-  
-  
-  
-  
-  
-  <li>
-    <a target="_blank" href="https://github.com/didwodnr123">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-  </li>
-  
-  
-</ul>
-  </div>
-</section>
-
-      <!-- Friends Blog -->
-      
+                <!-- Friends Blog -->
+                
 <hr>
 <h5>FRIENDS</h5>
 <ul class="list-inline">
@@ -405,21 +534,54 @@
   
 </ul>
 
-
-      <!-- Ads -->
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- first shot -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6487568398225121" data-ad-slot="4814308751"
-     data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
+            </div>
+        </div>
     </div>
-    
-  </div>
-</div>
+</article>
 
+<!-- add support for mathjax by voleking-->
+
+
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'right',
+          // icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
 
 
@@ -546,7 +708,7 @@
     function generateCatalog(selector) {
 
         // interop with multilangual 
-        if ('true' == 'true') {
+        if ('' == 'true') {
             _containerSelector = 'div.post-container.active'
         } else {
             _containerSelector = 'div.post-container'
@@ -603,58 +765,6 @@
 
 
 <!-- Multi-Lingual -->
-
-<!-- Handle Language Change -->
-<script type="text/javascript">
-    // get nodes
-    var $zh = document.querySelector(".zh");
-    var $en = document.querySelector(".en");
-    var $select = document.querySelector("select");
-
-    // Changes at v1.8.1: include lang flag as a url query. This interop well with catalog hash anchors.
-    function getLang() { return new URLSearchParams(document.location.search).get("lang") }
-
-    function setLang(newLang) {
-        var params = new URLSearchParams(document.location.search)
-        params.set("lang", newLang)
-        document.location.search = params.toString()  // refresh.
-    }
-
-    // handle render
-    function _render() {
-        var lang = getLang()
-        // en
-        if (lang == "en") {
-            $select.selectedIndex = 1;
-            $en.style.display = "block";
-            $en.classList.add("active");
-            $zh.style.display = "none";
-            $zh.classList.remove("active");
-            // default to zh-cn
-        } else {
-            $select.selectedIndex = 0;
-            $zh.style.display = "block";
-            $zh.classList.add("active");
-            $en.style.display = "none";
-            $en.classList.remove("active");
-        }
-        // interop with catalog 
-        generateCatalog(".catalog-body");
-    }
-
-    // handle select change
-    function onLanChange(index) {
-        if (index == 0) {
-            lang = "zh"
-        } else {
-            lang = "en"
-        }
-        setLang(lang)
-    }
-
-    // init
-    _render();
-</script>
 
 
 <!-- Simple Jekyll Search -->

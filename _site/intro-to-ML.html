@@ -12,30 +12,30 @@
 
     <!-- Open Graph -->
     <meta property="og:title"
-        content="[AI study] Week1: Intro to GAN - Data Science | Jaeuk's Blog">
+        content="[번역] Intro to Machine Learning - Data Science | Jaeuk's Blog">
     
     <meta property="og:type" content="article">
     <meta property="og:description" content="
-  본 내용은 Coursera Build Basic Generative Adversarial Networks (GANs) Lecture 기반으로 구성했습니다.
+  본 내용은 Kaggle Intro to Machine Learning 을 참고하여 구성하였습니다.
 
 ">
     
-    <meta property="article:published_time" content=" 2021-05-27T00:00:00Z">
+    <meta property="article:published_time" content=" 2021-05-31T00:00:00Z">
     
     
     <meta property="article:author" content="Jaeuk">
     
     
-    <meta property="article:tag" content="AI Study">
+    <meta property="article:tag" content="Translation">
     
-    <meta property="article:tag" content="GAN">
+    <meta property="article:tag" content="Kaggle">
     
     
     <meta property="og:image" content="https://didwodnr123.github.io/img/jaeuk.jpg">
-    <meta property="og:url" content="https://didwodnr123.github.io/2021/05/27/week1/">
+    <meta property="og:url" content="https://didwodnr123.github.io/intro-to-ML.html">
     <meta property="og:site_name" content="Data Science | Jaeuk's Blog">
 
-    <title>[AI study] Week1: Intro to GAN - Data Science | Jaeuk's Blog</title>
+    <title>[번역] Intro to Machine Learning - Data Science | Jaeuk's Blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -44,7 +44,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://didwodnr123.github.io/2021/05/27/week1/">
+    <link rel="canonical" href="https://didwodnr123.github.io/intro-to-ML.html">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href=" /css/bootstrap.min.css">
@@ -106,13 +106,13 @@
                         
                         
                         <li>
-                            <a href="/about/">About</a>
+                            <a href="/about.html">About</a>
                         </li>
                         
                         
                         
                         <li>
-                            <a href="/archive/">Archive</a>
+                            <a href="/archive.html">Archive</a>
                         </li>
                         
                         
@@ -238,15 +238,15 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/archive/?tag=AI+Study" title="AI Study">AI Study</a>
+                        <a class="tag" href="/archive/?tag=Translation" title="Translation">Translation</a>
                         
-                        <a class="tag" href="/archive/?tag=GAN" title="GAN">GAN</a>
+                        <a class="tag" href="/archive/?tag=Kaggle" title="Kaggle">Kaggle</a>
                         
                     </div>
-                    <h1>[AI study] Week1: Intro to GAN</h1>
+                    <h1>[번역] Intro to Machine Learning</h1>
                     
-                    <h2 class="subheading"> "Generative Adversarial Network"</h2>
-                    <span class="meta">Posted by Jaeuk on May 27, 2021</span>
+                    <h2 class="subheading"> "How Models work"</h2>
+                    <span class="meta">Posted by Jaeuk on May 31, 2021</span>
                 </div>
             </div>
         </div>
@@ -273,206 +273,69 @@
                 
 
 				<blockquote>
-  <p>본 내용은 Coursera <a href="https://www.coursera.org/programs/96b56ed6-2c7a-4373-92df-2d467731559d/browse?currentTab=CATALOG&amp;productId=I7xTyNLAEeqdUQo9B2YGiw&amp;productType=s12n&amp;query=GAN&amp;showMiniModal=true">Build Basic Generative Adversarial Networks (GANs)</a> Lecture 기반으로 구성했습니다.</p>
+  <p>본 내용은 Kaggle <a href="https://www.kaggle.com/dansbecker/how-models-work">Intro to Machine Learning</a> 을 참고하여 구성하였습니다.</p>
 </blockquote>
 
-<p>지난주, Coursera Andrew Ng 교수님의 Deep learning specialization을 마무리했습니다. 이번주부터는 굉장히 섬세한 fake 이미지를 생성할 수 있는 GAN 모델을 다루는 강의를 시청하고 리뷰할 예정입니다.</p>
+<p>우연히 유튜브에서 흥미로운 사람을 발견했습니다. Ken Jee 라는 유튜버인데, 데이터 사이언스에 관해 다양한 주제들로 영상을 제작하는 크리에이터 입니다. 이 분 영상 중  “<a href="https://www.youtube.com/watch?v=4OZip0cgOho">How I Would Learn Data Science (If I Had to Start Over)</a>” 을 보면 데이터 사이언티스트를 준비하시는 분들에게 꽤나 도움이 될 것 같습니다. 다른 좋은 영상들도 많이 있으니 참고해보세요! Ken이 추천한 학습 방법 중 하나가 바로 제가 포스팅 할 <strong>Kaggle micro-course</strong> 입니다. Python부터 SQL, ML, DL 까지 상세하게 정리되어 있고, 무엇보다 실습이 있다는 것이 가장 큰 장점입니다.</p>
 
-<p>GAN 이란 Generative Adverarial Network의 약자로, 하나의 모델이 가짜 이미지를 생성하고 다른 모델이 진짜 이미지와 가짜 이미지를 구분? 하면서 Generator 모델이 더욱 완벽한 fake 이미지를 만들 수 있도록 training 합니다.</p>
+<h2 id="how-models-work">How Models Work</h2>
 
-<h2 id="generative-models">Generative Models</h2>
+<p><img src="http://i.imgur.com/7tsb5b1.png" alt="First Decision Trees" /></p>
 
-<p><img src="/img/AI_study/gan1.png" alt="GAN" style="zoom:50%;" /></p>
+<p>간단한 Decision Tree 모양입니다.</p>
 
-<p><strong>Generator</strong></p>
+<p>이 Decision Tree는 오직 2개의 카테고리로 집들을 분류합니다. 예측된 가격은 같은 카테고리에 있는 집들의 평균 가격 정도로 이해하시면 됩니다.</p>
 
-<ul>
-  <li>Random noise를 input에 주고 fake image를 생성합니다.</li>
-</ul>
+<p>사람들은 어떻게 집들을 두 개의 카테고리로 나눌 지 데이터를 사용해서 결정한 후, 각 그룹의 예측 가격을 결정합니다. 데이터로부터 이 패턴을 구성하는 단계를 <strong>Fitting</strong> or <strong>Training</strong> the model 이라 합니다. Model을 Fitting 시키는 데 사용되는 데이터를 <strong>training data</strong>라 합니다.</p>
 
-<p><strong>Discriminator</strong></p>
+<p>어떻게 모델이 Fitting 되는 지에 대한 내용은 꽤 복잡하기 때문에 나중에 심화 과정에서 배워도 됩니다. 모델이 한 번 Fitting 되고 나면 새로운 데이터를 사용해서 추가적으로 집 값을 예측할 수 있습니다.</p>
 
-<ul>
-  <li>Real image를 input에 주고 학습시킵니다.</li>
-</ul>
+<h4 id="improving-the-decision-tree">Improving the Decision Tree</h4>
 
-<p>학습이 완료되면 Random Noise를 input으로 Generator에 주게 되면 정교한 fake 이미지를 생성하게 됩니다. 그리고 위 모델들이 경쟁하며 성능을 향상시키는 구조를 갖고 있습니다.</p>
+<p><img src="http://i.imgur.com/prAjgku.png" alt="First Decision Trees" /></p>
 
-<h4 id="summary">Summary</h4>
+<p>일반적으로 방이 2개 이상인 집이 더 비쌉니다. 따라서 왼쪽 Tree가 더 논리적으로 맞다는 것을 확인할 수 있습니다. 하지만 이것의 가장 큰 단점은 집들의 다양한 특징들을 고려하지 못한다는 것입니다…</p>
 
-<ul>
-  <li>Generative models learn to produce <strong>realistic</strong> examples</li>
-  <li>Discriminative models distinguish between classes</li>
-</ul>
+<p><img src="http://i.imgur.com/R3ywQsR.png" alt="Depth 2 Tree" /></p>
 
-<h2 id="real-life-gans">Real Life GANs</h2>
+<p>따라서 tree를 보다 <strong>Deep</strong> 하게 구성해야 합니다. 이것도 사실은 부족하지만 이해를 돕기에는 충분하다고 생각합니다. 마지막으로 맨 끝에 위치한 박스? 를 <strong>Leaf</strong>라고 합니다.</p>
 
-<p>Ian Goodfellow is known as the creator of the GAN.</p>
+<h2 id="basic-data-exploration">Basic Data Exploration</h2>
 
-<p>not limited to human faces</p>
+<h4 id="using-pandas-to-get-familiar-with-your-data">Using Pandas to Get Familiar With Your Data</h4>
 
-<p>image translation : horse to zebra, vice versa</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
-<p>draw something -&gt; able to produce realistic image</p>
+<p>판다스 라이브러리 중 가장 중요한 것은 DataFrame 입니다. 데이터프레임은 데이터를 엑셀 표 처럼 구성해주는 역할을 합니다. 지금부터 Melbourne, Australia의 집값 데이터를 활용해서 pandas를 사용해보겠습니다.</p>
 
-<p>Monariza -&gt; moving</p>
-
-<p>Companies Using GANs</p>
-
-<ul>
-  <li>Adobe</li>
-  <li>Google (text generation)</li>
-  <li>IBM (data augmentation) : x enough data -&gt; augmentation</li>
-  <li>whatever you like</li>
-</ul>
-
-<h4 id="summary-1">Summary</h4>
-
-<ul>
-  <li>GANs’ performance is rapidly improving</li>
-  <li>Huge opportunity to work in this space!</li>
-  <li>Major companies are using them</li>
-</ul>
-
-<h2 id="intuition-behind-gans">Intuition Behind GANs</h2>
-
-<h4 id="outline">Outline</h4>
-
-<ul>
-  <li>
-    <p>the goal of the generator and the discriminator</p>
-  </li>
-  <li>
-    <p>the competition between them</p>
-  </li>
-</ul>
-
-<p>Generator : learn to make fakes that look real</p>
-
-<p>Discriminator : learns to distinguish real from fake</p>
-
-<p>First, train a discriminator</p>
-
-<h4 id="summary-2">Summary</h4>
-
-<ul>
-  <li>The <strong>generator’s</strong> goal is to fool the discriminator</li>
-  <li>The <strong>discriminator’s</strong> goal is to distinguish between real and fake</li>
-  <li>They learn from the competition with each other</li>
-  <li>At the end, <strong>fakes</strong> look <strong>real</strong></li>
-</ul>
-
-<h2 id="discriminator">Discriminator</h2>
-
-<h4 id="outline-1">Outline</h4>
-
-<ul>
-  <li>Review of classifiers</li>
-  <li>The role of classifiers in terms of probability</li>
-  <li>Discriminator</li>
-</ul>
-
-<p>Discriminator : Distinguish between different classes</p>
-
-<h4 id="summary-3">Summary</h4>
-
-<ul>
-  <li>The <strong>discriminator</strong> is a classifier</li>
-  <li>It learns the probability of class Y (<strong>real</strong> or <strong>fake</strong>) given features X</li>
-  <li>The probabilities are the feedback for the <strong>generator</strong></li>
-</ul>
-
-<h2 id="generator">Generator</h2>
-
-<h4 id="outline-2">Outline</h4>
-
-<ul>
-  <li>What the generator does</li>
-  <li>How it improves its performance</li>
-  <li>Generator in terms of probability</li>
-</ul>
-
-<p>Noise vector - different output</p>
-
-<p>Noise -&gt; <strong>Generator</strong> -&gt; Features(X hat) -&gt; **Discriminator ** -&gt; Output (Y hat) -&gt; Cost -&gt; update Generator’s Parameters</p>
-
-<h4 id="summary-4">Summary</h4>
-
-<ul>
-  <li>The <strong>Generator</strong> produces fake data</li>
-  <li>It learns the probability of features X</li>
-  <li>The <strong>Generator</strong> takes as input noise (random features)</li>
-</ul>
-
-<h2 id="bce-cost-function">BCE Cost Function</h2>
-
-<h4 id="outline-3">Outline</h4>
-
-<ul>
-  <li>Binary Cross Entropy(BCE) Loss equation by parts</li>
-  <li>How it looks graphically</li>
-</ul>
-
-<h4 id="summary-5">Summary</h4>
-
-<ul>
-  <li>The BCE cost function has two parts (one relevant for each class)</li>
-  <li>Close to zero when label and the prediction are similar</li>
-  <li>Approaches infinity when the label and the prediction are different</li>
-</ul>
-
-<h2 id="putting-it-all-together">Putting It All Together</h2>
-
-<h4 id="outline-4">Outline</h4>
-
-<ul>
-  <li>How the whole architecture looks</li>
-  <li>How to train GANs</li>
-</ul>
-
-<h4 id="summary-6">Summary</h4>
-
-<ul>
-  <li>GANs train in an alternating fashion</li>
-  <li>The two models should always be at a similar “skill” level</li>
-</ul>
-
-<h2 id="intro-to-pytorch">Intro to PyTorch</h2>
-
-<h4 id="outline-5">Outline</h4>
-
-<ul>
-  <li>Comparison with TensorFlow</li>
-  <li>Dfining Models</li>
-  <li>Training</li>
-</ul>
-
-<p><img src="/img/AI_study/pytorch_vs_tensorflow.png" alt="GAN" /></p>
-
-<p><img src="https://github.com/didwodnr123/didwodnr123.github.io/blob/main/img/AI_study/5.PNG?raw=true" alt="GAN1" /></p>
-
-<p><img src="https://github.com/didwodnr123/didwodnr123.github.io/blob/main/img/AI_study/6.PNG?raw=true" alt="GAN2" /></p>
-
-<h4 id="summary-7">Summary</h4>
-
-<ul>
-  <li>PyTorch makes computations on the run</li>
-  <li>Dynamic computational graphs in PyTorch</li>
-  <li><strong>Just another framework, and similar to Tensorflow!</strong></li>
-</ul>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="c1"># save filepath to variable for easier access
+</span><span class="n">melbourne_file_path</span> <span class="o">=</span> <span class="s">'./data/melb_data.csv'</span>
+<span class="c1"># read the data and store data in DataFrame titled melbourne_data
+</span><span class="n">melbourne_data</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">melbourne_file_path</span><span class="p">)</span> 
+<span class="c1"># print a summary of the data in Melbourne data
+</span><span class="n">melbourne_data</span><span class="p">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 
 
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     
-                    
-                    <li class="next">
-                        <a href="/2021/05/31/intro-to-ML/" data-toggle="tooltip" data-placement="top" title="[번역] Intro to Machine Learning">
-                        Next<br>
-                        <span>[번역] Intro to Machine Learning</span>
+                    <li class="previous">
+                        <a href="/week1.html" data-toggle="tooltip" data-placement="top" title="[AI study] Week1: Intro to GAN">
+                        Previous<br>
+                        <span>[AI study] Week1: Intro to GAN</span>
                         </a>
                     </li>
+                    
                     
                 </ul>
                 <hr style="visibility: hidden;">

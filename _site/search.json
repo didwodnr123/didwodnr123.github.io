@@ -2,9 +2,9 @@
   
     {
       "title"    : "[번역] Intro to Machine Learning",
-      "subtitle" : " &quot;How Models workn&quot;",
+      "subtitle" : " &quot;How Models work&quot;",
       "tags"     : "Translation, Kaggle",
-      "url"      : "/2021/05/31/intro-to-ML/",
+      "url"      : "/intro-to-ML.html",
       "date"     : "2021-05-31 00:00:00 +0900"
     } ,
   
@@ -12,7 +12,7 @@
       "title"    : "[AI study] Week1: Intro to GAN",
       "subtitle" : " &quot;Generative Adversarial Network&quot;",
       "tags"     : "AI Study, GAN",
-      "url"      : "/2021/05/27/week1/",
+      "url"      : "/week1.html",
       "date"     : "2021-05-27 00:00:00 +0900"
     } 
   
