@@ -12,17 +12,30 @@
 
     <!-- Open Graph -->
     <meta property="og:title"
-        content="Data Science | Jaeuk's Blog">
+        content="[Tutorial] Keras: Basic classification - Data Science | Jaeuk's Blog">
     
-    <meta property="og:type" content="website">
-    <meta property="og:description"
-        content="[Just Do It]">
+    <meta property="og:type" content="article">
+    <meta property="og:description" content="
+  튜토리얼 출처: TensorFlow
+
+">
+    
+    <meta property="article:published_time" content=" 2021-06-01T21:59:56Z">
+    
+    
+    <meta property="article:author" content="Jaeuk">
+    
+    
+    <meta property="article:tag" content="Tutorial">
+    
+    <meta property="article:tag" content="Keras">
+    
     
     <meta property="og:image" content="https://didwodnr123.github.io/img/jaeuk.jpg">
-    <meta property="og:url" content="https://didwodnr123.github.io/">
+    <meta property="og:url" content="https://didwodnr123.github.io/basic-classification.html">
     <meta property="og:site_name" content="Data Science | Jaeuk's Blog">
 
-    <title>Data Science | Jaeuk's Blog</title>
+    <title>[Tutorial] Keras: Basic classification - Data Science | Jaeuk's Blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -31,7 +44,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://didwodnr123.github.io/">
+    <link rel="canonical" href="https://didwodnr123.github.io/basic-classification.html">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href=" /css/bootstrap.min.css">
@@ -197,148 +210,143 @@
   </div>
 </div>
 
-    <!-- Page Header -->
+    <!-- Image to hack wechat -->
+<!-- <img src="/img/icon_wechat.png" width="0" height="0"> -->
+<!-- <img src="/img/post-bg-2015.jpg" width="0" height="0"> -->
+
+<!-- Post Header -->
 
 
 
+<style type="text/css">
+    header.intro-header{
+        position: relative;
+        background-image: url('/img/post-bg-2015.jpg');
+        background: ;
+    }
 
+    
+</style>
 
+<header class="intro-header" >
 
-
-<header class="intro-header" style="background-image: url('/img/home-bg.jpg')">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-        
-        <div class="site-heading">
-        
-          <h1>Jaeuk's Blog</h1>
-          <span class="subheading">[Just Do It]</span>
+    <div class="header-mask"></div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <div class="tags">
+                        
+                        <a class="tag" href="/archive/?tag=Tutorial" title="Tutorial">Tutorial</a>
+                        
+                        <a class="tag" href="/archive/?tag=Keras" title="Keras">Keras</a>
+                        
+                    </div>
+                    <h1>[Tutorial] Keras: Basic classification</h1>
+                    
+                    <h2 class="subheading"> "Classify images of clothing"</h2>
+                    <span class="meta">Posted by Jaeuk on June 1, 2021</span>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </header>
 
 
-<!-- Main Content -->
-<div class="container">
-  <div class="row">
-    
 
-    <!-- USE SIDEBAR -->
-    <!-- PostList Container -->
-    <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12
-      col-xs-12 postlist-container">
-      
-<div class="post-preview">
-    <a href="/intro-to-ML.html">
-        <h2 class="post-title">
-            [번역] Intro to Machine Learning
-        </h2>
-        
-        <h3 class="post-subtitle">
-             "How Models work"
-        </h3>
-        
-        <div class="post-content-preview">
-            
+
+
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+
+    <!-- Post Container -->
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                post-container">
+
+                <!-- Multi-Lingual -->
                 
-  본 내용은 Kaggle Intro to Machine Learning 을 참고하여 구성하였습니다.
 
+				<blockquote>
+  <p><a href="https://www.tensorflow.org/tutorials/keras/classification">튜토리얼 출처: TensorFlow</a></p>
+</blockquote>
 
-우연히 유튜브에서 흥미로운 사람을 발견했습니다. Ken Jee 라는 유튜버인데, 데이터 사이언스에 관해 다양한 주제들로 영상을 제작하는 크리에이터 입니다. 이 분 영상 중  “How I Would Learn Data Science (If I Ha...
-            
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Jaeuk on May 31, 2021
-    </p>
-</div>
-<hr>
+<h3 id="keras">Keras</h3>
 
-<div class="post-preview">
-    <a href="/week1.html">
-        <h2 class="post-title">
-            [AI study] Week1: Intro to GAN
-        </h2>
-        
-        <h3 class="post-subtitle">
-             "Generative Adversarial Network"
-        </h3>
-        
-        <div class="post-content-preview">
-            
-                
-  본 내용은 Coursera Build Basic Generative Adversarial Networks (GANs) Lecture 기반으로 구성했습니다.
+<ul>
+  <li>a high-level API to build and train models in TensorFlow.</li>
+</ul>
 
-
-지난주, Coursera Andrew Ng 교수님의 Deep learning specialization을 마무리했습니다. 이번주부터는 굉장히 섬세한 fake 이미지를 생성할 수 있는 GAN...
-            
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Jaeuk on May 27, 2021
-    </p>
-</div>
-<hr>
-
-<div class="post-preview">
-    <a href="/basic-classification.html">
-        <h2 class="post-title">
-            [Tutorial] Keras: Basic classification
-        </h2>
-        
-        <h3 class="post-subtitle">
-             "Classify images of clothing"
-        </h3>
-        
-        <div class="post-content-preview">
-            
-                
-  튜토리얼 출처: TensorFlow
-
-
-Keras
-
-
-  a high-level API to build and train models in TensorFlow.
-
-
-1
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
 2
 3
 4
 5
 6
-import tensorflow as tf
+</pre></td><td class="rouge-code"><pre><span class="kn">import</span> <span class="nn">tensorflow</span> <span class="k">as</span> <span class="n">tf</span>
 
-import numpy as np
-import matplotlib.pyplot as plt
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="n">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
 
-print(tf.__ve...
-            
-        </div>
-    </a>
-    <p class="post-meta">
-        Posted by Jaeuk on June 1, 2021
-    </p>
-</div>
-<hr>
+<span class="k">print</span><span class="p">(</span><span class="n">tf</span><span class="p">.</span><span class="n">__version__</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
 
 
-<!-- Pager -->
 
+                <hr style="visibility: hidden;">
+                <ul class="pager">
+                    
+                    
+                    <li class="next">
+                        <a href="/week1.html" data-toggle="tooltip" data-placement="top" title="[AI study] Week1: Intro to GAN">
+                        Next<br>
+                        <span>[AI study] Week1: Intro to GAN</span>
+                        </a>
+                    </li>
+                    
+                </ul>
+                <hr style="visibility: hidden;">
 
-    </div>
+                
+
+                
+            </div>  
+
+    <!-- Side Catalog Container -->
+        
+            <div class="
+                col-lg-2 col-lg-offset-0
+                visible-lg-block
+                sidebar-container
+                catalog-container">
+                <div class="side-catalog">
+                    <hr class="hidden-sm hidden-xs">
+                    <h5>
+                        <a class="catalog-toggle" href="#">CATALOG</a>
+                    </h5>
+                    <ul class="catalog-body"></ul>
+                </div>
+            </div>
+        
+
     <!-- Sidebar Container -->
-    <div class="col-lg-3 col-lg-offset-0 col-md-3 col-md-offset-0 col-sm-12
-      col-xs-12 sidebar-container">
-      <!-- Featured Tags -->
-      
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
+
+                <!-- Featured Tags -->
+                
 
 
 <section>
+    
+        <hr class="hidden-sm hidden-xs">
     
     <h5><a href="/archive/">FEATURED TAGS</a></h5>
     <div class="tags">
@@ -351,46 +359,8 @@ print(tf.__ve...
 </section>
 
 
-      <!-- Short About -->
-      <section class="visible-md visible-lg">
-  <hr>
-  <h5><a href="/about/">ABOUT ME</a></h5>
-  <div class="short-about">
-    
-    <img src="/img/jaeuk.jpg" />
-    
-    
-    <p>Aspiring data scientist <br> | ML/DL Engineer <br> | Data Engineer.</p>
-    
-    <!-- SNS Link -->
-    
-
-
-<ul class="list-inline">
-
-
-  
-  
-  
-  
-  
-  
-  <li>
-    <a target="_blank" href="https://github.com/didwodnr123">
-      <span class="fa-stack fa-lg">
-        <i class="fa fa-circle fa-stack-2x"></i>
-        <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-      </span>
-    </a>
-  </li>
-  
-  
-</ul>
-  </div>
-</section>
-
-      <!-- Friends Blog -->
-      
+                <!-- Friends Blog -->
+                
 <hr>
 <h5>FRIENDS</h5>
 <ul class="list-inline">
@@ -399,21 +369,54 @@ print(tf.__ve...
   
 </ul>
 
-
-      <!-- Ads -->
-      <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- first shot -->
-<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6487568398225121" data-ad-slot="4814308751"
-     data-ad-format="auto" data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-
+            </div>
+        </div>
     </div>
-    
-  </div>
-</div>
+</article>
 
+<!-- add support for mathjax by voleking-->
+
+
+
+
+
+
+
+
+
+<!-- async load function -->
+<script>
+    function async(u, c) {
+      var d = document, t = 'script',
+          o = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+      o.src = u;
+      if (c) { o.addEventListener('load', function (e) { c(null, e); }, false); }
+      s.parentNode.insertBefore(o, s);
+    }
+</script>
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script>
+    async("//cdnjs.cloudflare.com/ajax/libs/anchor-js/1.1.1/anchor.min.js",function(){
+        anchors.options = {
+          visible: 'hover',
+          placement: 'right',
+          // icon: '#'
+        };
+        anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+    })
+</script>
+<style>
+    /* place left on bigger screen */
+    @media all and (min-width: 800px) {
+        .anchorjs-link{
+            position: absolute;
+            left: -0.75em;
+            font-size: 1.1em;
+            margin-top : -0.1em;
+        }
+    }
+</style>
 
 
 

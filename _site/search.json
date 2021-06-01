@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "[Tutorial] Keras: Basic classification",
+      "subtitle" : " &quot;Classify images of clothing&quot;",
+      "tags"     : "Tutorial, Keras",
+      "url"      : "/basic-classification.html",
+      "date"     : "2021-06-01 21:59:56 +0900"
+    } ,
+  
+    {
       "title"    : "[번역] Intro to Machine Learning",
       "subtitle" : " &quot;How Models work&quot;",
       "tags"     : "Translation, Kaggle",
