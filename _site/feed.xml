@@ -5,9 +5,21 @@
     <description>Data Science | ML/DL | Data engineering</description>
     <link>https://didwodnr123.github.io/</link>
     <atom:link href="https://didwodnr123.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Tue, 01 Jun 2021 22:20:53 +0900</pubDate>
-    <lastBuildDate>Tue, 01 Jun 2021 22:20:53 +0900</lastBuildDate>
+    <pubDate>Wed, 02 Jun 2021 00:38:23 +0900</pubDate>
+    <lastBuildDate>Wed, 02 Jun 2021 00:38:23 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title></title>
+        <description>&lt;h2 id=&quot;유시민의-글쓰기-특강&quot;&gt;[유시민의 글쓰기 특강]&lt;/h2&gt;
+
+</description>
+        <pubDate>Wed, 02 Jun 2021 00:38:01 +0900</pubDate>
+        <link>https://didwodnr123.github.io/how-to-write.html</link>
+        <guid isPermaLink="true">https://didwodnr123.github.io/how-to-write.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>[Tutorial] Keras: Basic classification</title>

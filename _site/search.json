@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "",
+      "subtitle" : "",
+      "tags"     : "",
+      "url"      : "/how-to-write.html",
+      "date"     : "2021-06-02 00:38:01 +0900"
+    } ,
+  
+    {
       "title"    : "[Tutorial] Keras: Basic classification",
       "subtitle" : " &quot;Classify images of clothing&quot;",
       "tags"     : "Tutorial, Keras",
