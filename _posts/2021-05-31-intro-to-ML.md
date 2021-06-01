@@ -1,7 +1,7 @@
 ---
 layout:     post
 title:      "[번역] Intro to Machine Learning"
-subtitle:   " \"How Models workn\""
+subtitle:   " \"How Models work\""
 author:     "Jaeuk"
 header-img: "img/post-bg-2015.jpg"
 catalog: true
