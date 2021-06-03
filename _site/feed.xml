@@ -5,9 +5,69 @@
     <description>Data Science | ML/DL | Data engineering</description>
     <link>https://didwodnr123.github.io/</link>
     <atom:link href="https://didwodnr123.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 02 Jun 2021 00:53:46 +0900</pubDate>
-    <lastBuildDate>Wed, 02 Jun 2021 00:53:46 +0900</lastBuildDate>
+    <pubDate>Thu, 03 Jun 2021 13:38:33 +0900</pubDate>
+    <lastBuildDate>Thu, 03 Jun 2021 13:38:33 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>[Plan] 데이터 사이언스 공부 계획</title>
+        <description>&lt;p&gt;2021년 데이터 사이언스를 공부하기 위한 학습 계획을 세워보려고 합니다. 몇 가지 유익한 Lecture를 적어놓고 순차적으로 이수 할 계획입니다.&lt;/p&gt;
+
+&lt;h2 id=&quot;to-do&quot;&gt;To Do&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;[MIT] 데이터 사이언스 기초 - &lt;a href=&quot;https://www.edwith.org/ds201/joinLectures/19265?isDesc=false&quot;&gt;edwith&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;done&quot;&gt;Done&lt;/h2&gt;
+
+&lt;h4 id=&quot;python&quot;&gt;Python&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;모두를 위한 파이썬 : PY4E (Python for Everybody - Michigan univ. Charles Severance)&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.edwith.org/pythonforeverybody&quot;&gt;edwith&lt;/a&gt;&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;모두를 위한 프로그래밍 : 파이썬
+        &lt;ul&gt;
+          &lt;li&gt;Getting Started with Python&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;파이썬 자료구조
+        &lt;ul&gt;
+          &lt;li&gt;Python Data Structures&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;파이썬을 이용한 웹 스크래핑
+        &lt;ul&gt;
+          &lt;li&gt;Using Python to Access Web Data&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;파이썬을 이용한 데이터베이스 처리
+        &lt;ul&gt;
+          &lt;li&gt;Using Databased with Python&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;캡스톤 : 파이썬을 이용한 데이터 검색, 처리 및 시각화
+        &lt;ul&gt;
+          &lt;li&gt;Capstone : Retreiving, Processing and Visualizing Data&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 03 Jun 2021 13:36:51 +0900</pubDate>
+        <link>https://didwodnr123.github.io/plan.html</link>
+        <guid isPermaLink="true">https://didwodnr123.github.io/plan.html</guid>
+        
+        <category>Plan</category>
+        
+        
+      </item>
     
       <item>
         <title>[독서] 유시민의 글쓰기 특강</title>

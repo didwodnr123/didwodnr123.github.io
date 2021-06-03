@@ -1,6 +1,14 @@
 [
   
     {
+      "title"    : "[Plan] 데이터 사이언스 공부 계획",
+      "subtitle" : " &quot;Data science Roadmap&quot;",
+      "tags"     : "Plan",
+      "url"      : "/plan.html",
+      "date"     : "2021-06-03 13:36:51 +0900"
+    } ,
+  
+    {
       "title"    : "[독서] 유시민의 글쓰기 특강",
       "subtitle" : " &quot;글을 잘 쓰기 위한 독서&quot;",
       "tags"     : "Reading",
