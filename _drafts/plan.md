@@ -14,6 +14,7 @@ tags:
 ## To Do
 
 - [MIT] 데이터 사이언스 기초 - [edwith](https://www.edwith.org/ds201/joinLectures/19265?isDesc=false)
+- [Harvard] 확률론 기초 - [edwith](https://www.edwith.org/ai152/joinLectures/17924?isDesc=false)
 
  
 
