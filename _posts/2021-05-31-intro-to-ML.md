@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "[번역] Intro to Machine Learning"
-subtitle:   " \"How Models work\""
+title:      "[번역] 캐글: 머신러닝 시작하기"
+subtitle:   " \"Intro to Machine Learning\""
 author:     "Jaeuk"
 header-img: "img/post-bg-2015.jpg"
 catalog: true

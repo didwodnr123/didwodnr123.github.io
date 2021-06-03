@@ -5,18 +5,20 @@
     <description>Data Science | ML/DL | Data engineering</description>
     <link>https://didwodnr123.github.io/</link>
     <atom:link href="https://didwodnr123.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Wed, 02 Jun 2021 00:38:23 +0900</pubDate>
-    <lastBuildDate>Wed, 02 Jun 2021 00:38:23 +0900</lastBuildDate>
+    <pubDate>Wed, 02 Jun 2021 00:53:46 +0900</pubDate>
+    <lastBuildDate>Wed, 02 Jun 2021 00:53:46 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
     
       <item>
-        <title></title>
+        <title>[독서] 유시민의 글쓰기 특강</title>
         <description>&lt;h2 id=&quot;유시민의-글쓰기-특강&quot;&gt;[유시민의 글쓰기 특강]&lt;/h2&gt;
 
 </description>
-        <pubDate>Wed, 02 Jun 2021 00:38:01 +0900</pubDate>
+        <pubDate>Wed, 02 Jun 2021 00:48:47 +0900</pubDate>
         <link>https://didwodnr123.github.io/how-to-write.html</link>
         <guid isPermaLink="true">https://didwodnr123.github.io/how-to-write.html</guid>
+        
+        <category>Reading</category>
         
         
       </item>
@@ -60,7 +62,7 @@
       </item>
     
       <item>
-        <title>[번역] Intro to Machine Learning</title>
+        <title>[번역] 캐글: 머신러닝 시작하기</title>
         <description>&lt;blockquote&gt;
   &lt;p&gt;본 내용은 Kaggle &lt;a href=&quot;https://www.kaggle.com/dansbecker/how-models-work&quot;&gt;Intro to Machine Learning&lt;/a&gt; 을 참고하여 구성하였습니다.&lt;/p&gt;
 &lt;/blockquote&gt;

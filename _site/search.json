@@ -1,11 +1,11 @@
 [
   
     {
-      "title"    : "",
-      "subtitle" : "",
-      "tags"     : "",
+      "title"    : "[독서] 유시민의 글쓰기 특강",
+      "subtitle" : " &quot;글을 잘 쓰기 위한 독서&quot;",
+      "tags"     : "Reading",
       "url"      : "/how-to-write.html",
-      "date"     : "2021-06-02 00:38:01 +0900"
+      "date"     : "2021-06-02 00:48:47 +0900"
     } ,
   
     {
@@ -17,8 +17,8 @@
     } ,
   
     {
-      "title"    : "[번역] Intro to Machine Learning",
-      "subtitle" : " &quot;How Models work&quot;",
+      "title"    : "[번역] 캐글: 머신러닝 시작하기",
+      "subtitle" : " &quot;Intro to Machine Learning&quot;",
       "tags"     : "Translation, Kaggle",
       "url"      : "/intro-to-ML.html",
       "date"     : "2021-05-31 00:00:00 +0900"
