@@ -5,7 +5,7 @@
       "subtitle" : " &quot;Data science Roadmap&quot;",
       "tags"     : "Plan",
       "url"      : "/plan.html",
-      "date"     : "2021-06-03 13:36:51 +0900"
+      "date"     : "2021-06-03 18:59:59 +0900"
     } ,
   
     {
@@ -13,7 +13,7 @@
       "subtitle" : " &quot;글을 잘 쓰기 위한 독서&quot;",
       "tags"     : "Reading",
       "url"      : "/how-to-write.html",
-      "date"     : "2021-06-02 00:48:47 +0900"
+      "date"     : "2021-06-03 22:21:53 +0900"
     } ,
   
     {
@@ -22,6 +22,14 @@
       "tags"     : "Tutorial, Keras",
       "url"      : "/basic-classification.html",
       "date"     : "2021-06-01 21:59:56 +0900"
+    } ,
+  
+    {
+      "title"    : "[Plan] How to live?",
+      "subtitle" : " &quot;personal ideal life-style&quot;",
+      "tags"     : "Plan",
+      "url"      : "/How-to-live.html",
+      "date"     : "2021-06-03 18:59:58 +0900"
     } ,
   
     {
