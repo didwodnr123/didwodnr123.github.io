@@ -1,11 +1,19 @@
 [
   
     {
+      "title"    : "[ML] 회귀",
+      "subtitle" : " &quot;Regression&quot;",
+      "tags"     : "ML, Regression",
+      "url"      : "/regression.html",
+      "date"     : "2021-06-06 16:37:03 +0900"
+    } ,
+  
+    {
       "title"    : "[Plan] 데이터 사이언스 공부 계획",
       "subtitle" : " &quot;Data science Roadmap&quot;",
       "tags"     : "Plan",
       "url"      : "/plan.html",
-      "date"     : "2021-06-03 18:59:59 +0900"
+      "date"     : "2021-06-06 15:16:21 +0900"
     } ,
   
     {

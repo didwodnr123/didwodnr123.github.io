@@ -5,13 +5,38 @@
     <description>Data Science | ML/DL | Data engineering</description>
     <link>https://didwodnr123.github.io/</link>
     <atom:link href="https://didwodnr123.github.io/feed.xml" rel="self" type="application/rss+xml" />
-    <pubDate>Thu, 03 Jun 2021 22:21:54 +0900</pubDate>
-    <lastBuildDate>Thu, 03 Jun 2021 22:21:54 +0900</lastBuildDate>
+    <pubDate>Sun, 06 Jun 2021 17:07:54 +0900</pubDate>
+    <lastBuildDate>Sun, 06 Jun 2021 17:07:54 +0900</lastBuildDate>
     <generator>Jekyll v4.2.0</generator>
+    
+      <item>
+        <title>[ML] 회귀</title>
+        <description>&lt;h2 id=&quot;linear-regression&quot;&gt;Linear Regression&lt;/h2&gt;
+
+&lt;p&gt;선형 회귀는 가장 대표적인 회귀 알고리즘이다. 상대적으로 간단하고 성능이 뛰어나다. 2차원 좌표상에 임의의 점들이 흩어져 있다고 상상했을때 그 점들을 가장 예쁘게 지나는 선을 긋는다고 생각하면 쉽다.&lt;/p&gt;
+
+&lt;p&gt;흩어진 점들 간의 관계를 y = ax + b 식으로 풀어내면, 모든 점들을 가장 잘 만족시키는 a 와 b를 구할 수 있다. 여기서 a는 coefficient, b는 intercept 라고 한다.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;../img/in-post/linear_regression.png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://en.wikipedia.org/wiki/Linear_regression&quot;&gt;source: wikipedia&lt;/a&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 06 Jun 2021 16:37:03 +0900</pubDate>
+        <link>https://didwodnr123.github.io/regression.html</link>
+        <guid isPermaLink="true">https://didwodnr123.github.io/regression.html</guid>
+        
+        <category>ML</category>
+        
+        <category>Regression</category>
+        
+        
+      </item>
     
       <item>
         <title>[Plan] 데이터 사이언스 공부 계획</title>
         <description>&lt;p&gt;2021년 데이터 사이언스를 공부하기 위한 학습 계획을 세워보려고 합니다. 몇 가지 유익한 Lecture를 적어놓고 순차적으로 이수 할 계획입니다.&lt;/p&gt;
+
+&lt;p&gt;[혼자 공부하는 머신러닝+딥러닝] 책을 활용해서 머신러닝과 딥러닝에 대한 전반적인 기본기를 탄탄하게 다지고 가고 싶다.&lt;/p&gt;
 
 &lt;h2 id=&quot;to-do&quot;&gt;To Do&lt;/h2&gt;
 
@@ -61,7 +86,7 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 </description>
-        <pubDate>Thu, 03 Jun 2021 18:59:59 +0900</pubDate>
+        <pubDate>Sun, 06 Jun 2021 15:16:21 +0900</pubDate>
         <link>https://didwodnr123.github.io/plan.html</link>
         <guid isPermaLink="true">https://didwodnr123.github.io/plan.html</guid>
         
