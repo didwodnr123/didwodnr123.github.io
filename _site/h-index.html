@@ -12,28 +12,30 @@
 
     <!-- Open Graph -->
     <meta property="og:title"
-        content="[ML] 회귀 - Data Science | Jaeuk's Blog">
+        content="[프로그래머스] 정렬: H-index - Data Science | Jaeuk's Blog">
     
     <meta property="og:type" content="article">
-    <meta property="og:description" content="Linear Regression
+    <meta property="og:description" content="H-index
 ">
     
-    <meta property="article:published_time" content=" 2021-06-06T16:37:03Z">
+    <meta property="article:published_time" content=" 2021-06-09T00:00:00Z">
     
     
     <meta property="article:author" content="Jaeuk">
     
     
-    <meta property="article:tag" content="ML">
+    <meta property="article:tag" content="Algorithm">
     
-    <meta property="article:tag" content="Regression">
+    <meta property="article:tag" content="Programmers">
+    
+    <meta property="article:tag" content="Sort">
     
     
     <meta property="og:image" content="https://didwodnr123.github.io/img/jaeuk.jpg">
-    <meta property="og:url" content="https://didwodnr123.github.io/regression.html">
+    <meta property="og:url" content="https://didwodnr123.github.io/h-index.html">
     <meta property="og:site_name" content="Data Science | Jaeuk's Blog">
 
-    <title>[ML] 회귀 - Data Science | Jaeuk's Blog</title>
+    <title>[프로그래머스] 정렬: H-index - Data Science | Jaeuk's Blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -42,7 +44,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://didwodnr123.github.io/regression.html">
+    <link rel="canonical" href="https://didwodnr123.github.io/h-">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href=" /css/bootstrap.min.css">
@@ -236,15 +238,17 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/archive/?tag=ML" title="ML">ML</a>
+                        <a class="tag" href="/archive/?tag=Algorithm" title="Algorithm">Algorithm</a>
                         
-                        <a class="tag" href="/archive/?tag=Regression" title="Regression">Regression</a>
+                        <a class="tag" href="/archive/?tag=Programmers" title="Programmers">Programmers</a>
+                        
+                        <a class="tag" href="/archive/?tag=Sort" title="Sort">Sort</a>
                         
                     </div>
-                    <h1>[ML] 회귀</h1>
+                    <h1>[프로그래머스] 정렬: H-index</h1>
                     
-                    <h2 class="subheading"> "Regression"</h2>
-                    <span class="meta">Posted by Jaeuk on June 6, 2021</span>
+                    <h2 class="subheading"> "Sort"</h2>
+                    <span class="meta">Posted by Jaeuk on June 9, 2021</span>
                 </div>
             </div>
         </div>
@@ -270,32 +274,109 @@
                 <!-- Multi-Lingual -->
                 
 
-				<h2 id="linear-regression">Linear Regression</h2>
+				<h2 id="h-index">H-index</h2>
 
-<p>선형 회귀는 가장 대표적인 회귀 알고리즘이다. 상대적으로 간단하고 성능이 뛰어나다. 2차원 좌표상에 임의의 점들이 흩어져 있다고 상상했을때 그 점들을 가장 예쁘게 지나는 선을 긋는다고 생각하면 쉽다.</p>
+<blockquote>
+  <p><a href="https://programmers.co.kr/learn/courses/30/lessons/42747">Reference: Programmers</a></p>
+</blockquote>
 
-<p>흩어진 점들 간의 관계를 y = ax + b 식으로 풀어내면, 모든 점들을 가장 잘 만족시키는 a 와 b를 구할 수 있다. 여기서 a는 coefficient, b는 intercept 라고 한다.</p>
+<h4 id="문제-설명">문제 설명</h4>
 
-<p><img src="../img/in-post/linear_regression.png" /></p>
+<p>H-Index는 과학자의 생산성과 영향력을 나타내는 지표입니다. 어느 과학자의 H-Index를 나타내는 값인 h를 구하려고 합니다. 위키백과<a href="https://programmers.co.kr/learn/courses/30/lessons/42747#fn1">1</a>에 따르면, H-Index는 다음과 같이 구합니다.</p>
 
-<p><a href="https://en.wikipedia.org/wiki/Linear_regression">source: wikipedia</a></p>
+<p>어떤 과학자가 발표한 논문 <code class="language-plaintext highlighter-rouge">n</code>편 중, <code class="language-plaintext highlighter-rouge">h</code>번 이상 인용된 논문이 <code class="language-plaintext highlighter-rouge">h</code>편 이상이고 나머지 논문이 h번 이하 인용되었다면 <code class="language-plaintext highlighter-rouge">h</code>의 최댓값이 이 과학자의 H-Index입니다.</p>
+
+<p>어떤 과학자가 발표한 논문의 인용 횟수를 담은 배열 citations가 매개변수로 주어질 때, 이 과학자의 H-Index를 return 하도록 solution 함수를 작성해주세요.</p>
+
+<h4 id="제한사항">제한사항</h4>
+
+<ul>
+  <li>과학자가 발표한 논문의 수는 1편 이상 1,000편 이하입니다.</li>
+  <li>논문별 인용 횟수는 0회 이상 10,000회 이하입니다.</li>
+</ul>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>citations</th>
+      <th>return</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[3, 0, 6, 1, 5]</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="입출력-예-설명">입출력 예 설명</h4>
+
+<p>이 과학자가 발표한 논문의 수는 5편이고, 그중 3편의 논문은 3회 이상 인용되었습니다. 그리고 나머지 2편의 논문은 3회 이하 인용되었기 때문에 이 과학자의 H-Index는 3입니다.</p>
+
+<h4 id="구현">구현</h4>
+
+<h4 id="오류-코드">오류 코드</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">citations</span><span class="p">):</span>
+    <span class="n">citations</span><span class="p">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">citations</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">citations</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">l</span><span class="o">-</span><span class="n">i</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">citations</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>처음에 citations[i]를 리턴하려고 했다. 테스트 케이스를 1개 빼고 통과하지 못하였다. 왜 안될까.</p>
+
+<p>[0,1,3,5,6] 리스트는 잘 동작한다. 하지만 [1,1,1,1,1,9] 리스트를 적용하면 1을 리턴해야 하는데 9를 리턴하는 오류를 범한다.</p>
+
+<h4 id="올바른-코드">올바른 코드</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+5
+6
+7
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">citations</span><span class="p">):</span>
+    <span class="n">citations</span><span class="p">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="n">l</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">citations</span><span class="p">)</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">l</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">citations</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">l</span><span class="o">-</span><span class="n">i</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">l</span><span class="o">-</span><span class="n">i</span>
+    <span class="k">return</span> <span class="mi">0</span> 
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>H-index 문제는 오름차순으로 리스트를 정렬한 후, 계산하면 편리하다.</p>
+
+<p>오름차순으로 정렬된 리스트 우측으로 나보다 큰 수가 나만큼 남아있으면 결국 그 자리의 <code class="language-plaintext highlighter-rouge">l-i</code>값이 정답이 된다.</p>
+
 
 
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     
                     <li class="previous">
-                        <a href="/plan.html" data-toggle="tooltip" data-placement="top" title="[Plan] 데이터 사이언스 공부 계획">
+                        <a href="/selection-sort.html" data-toggle="tooltip" data-placement="top" title="[알고리즘] 정렬: 선택 정렬">
                         Previous<br>
-                        <span>[Plan] 데이터 사이언스 공부 계획</span>
+                        <span>[알고리즘] 정렬: 선택 정렬</span>
                         </a>
                     </li>
                     
                     
                     <li class="next">
-                        <a href="/week1.html" data-toggle="tooltip" data-placement="top" title="[AI study] Week1: Intro to GAN">
+                        <a href="/sugar.html" data-toggle="tooltip" data-placement="top" title="[백준] 2839: 설탕 배달">
                         Next<br>
-                        <span>[AI study] Week1: Intro to GAN</span>
+                        <span>[백준] 2839: 설탕 배달</span>
                         </a>
                     </li>
                     
@@ -346,10 +427,25 @@
         
         
         
+                <a data-sort="0002" 
+                    href="/archive/?tag=Algorithm"
+                    title="Algorithm"
+                    rel="6">Algorithm</a>
+        
+                <a data-sort="0004" 
+                    href="/archive/?tag=Sort"
+                    title="Sort"
+                    rel="4">Sort</a>
+        
                 <a data-sort="0005" 
-                    href="/archive/?tag=Plan"
-                    title="Plan"
-                    rel="2">Plan</a>
+                    href="/archive/?tag=Programmers"
+                    title="Programmers"
+                    rel="3">Programmers</a>
+        
+                <a data-sort="0006" 
+                    href="/archive/?tag=BOJ"
+                    title="BOJ"
+                    rel="2">BOJ</a>
     </div>
 </section>
 

@@ -12,26 +12,30 @@
 
     <!-- Open Graph -->
     <meta property="og:title"
-        content="[Plan] How to live? - Data Science | Jaeuk's Blog">
+        content="[프로그래머스] 정렬: 가장 큰 수 - Data Science | Jaeuk's Blog">
     
     <meta property="og:type" content="article">
-    <meta property="og:description" content="선택과 집중
+    <meta property="og:description" content="가장 큰 수
 ">
     
-    <meta property="article:published_time" content=" 2021-06-03T18:59:58Z">
+    <meta property="article:published_time" content=" 2021-06-08T00:00:00Z">
     
     
     <meta property="article:author" content="Jaeuk">
     
     
-    <meta property="article:tag" content="Plan">
+    <meta property="article:tag" content="Algorithm">
+    
+    <meta property="article:tag" content="Programmers">
+    
+    <meta property="article:tag" content="Sort">
     
     
     <meta property="og:image" content="https://didwodnr123.github.io/img/jaeuk.jpg">
-    <meta property="og:url" content="https://didwodnr123.github.io/How-to-live.html">
+    <meta property="og:url" content="https://didwodnr123.github.io/biggest-num.html">
     <meta property="og:site_name" content="Data Science | Jaeuk's Blog">
 
-    <title>[Plan] How to live? - Data Science | Jaeuk's Blog</title>
+    <title>[프로그래머스] 정렬: 가장 큰 수 - Data Science | Jaeuk's Blog</title>
 
     <!-- Web App Manifest -->
     <link rel="manifest" href="/pwa/manifest.json">
@@ -40,7 +44,7 @@
     <link rel="shortcut icon" href="/img/favicon.ico">
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://didwodnr123.github.io/How-to-live.html">
+    <link rel="canonical" href="https://didwodnr123.github.io/biggest-num.html">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href=" /css/bootstrap.min.css">
@@ -234,13 +238,17 @@
                 <div class="post-heading">
                     <div class="tags">
                         
-                        <a class="tag" href="/archive/?tag=Plan" title="Plan">Plan</a>
+                        <a class="tag" href="/archive/?tag=Algorithm" title="Algorithm">Algorithm</a>
+                        
+                        <a class="tag" href="/archive/?tag=Programmers" title="Programmers">Programmers</a>
+                        
+                        <a class="tag" href="/archive/?tag=Sort" title="Sort">Sort</a>
                         
                     </div>
-                    <h1>[Plan] How to live?</h1>
+                    <h1>[프로그래머스] 정렬: 가장 큰 수</h1>
                     
-                    <h2 class="subheading"> "personal ideal life-style"</h2>
-                    <span class="meta">Posted by Jaeuk on June 3, 2021</span>
+                    <h2 class="subheading"> "Sort"</h2>
+                    <span class="meta">Posted by Jaeuk on June 8, 2021</span>
                 </div>
             </div>
         </div>
@@ -266,36 +274,87 @@
                 <!-- Multi-Lingual -->
                 
 
-				<p>선택과 집중</p>
+				<h2 id="가장-큰-수">가장 큰 수</h2>
 
-<p>하나를 하면서 자꾸 다른 것을 떠올림..</p>
+<blockquote>
+  <p><a href="https://programmers.co.kr/learn/courses/30/lessons/42746">Reference - Programmers</a></p>
+</blockquote>
 
-<p>일정한 취침 시간과 기상 시간을 지키지 못함..</p>
+<h4 id="문제-설명">문제 설명</h4>
 
-<p>아침에 잘 일어나지 못함..</p>
+<p>0 또는 양의 정수가 주어졌을 때, 정수를 이어 붙여 만들 수 있는 가장 큰 수를 알아내 주세요.</p>
 
-<ol>
-  <li>
-    <p>책을 읽자! : 독서노트 작성해서 계속 기억을 리마인드 하자.</p>
-  </li>
-  <li>
-    <p>하기로 한 것은 무조건 하자. 미루고 미루다 보면 결국 못한다. 하더라도 시간이 너무 지체된다.</p>
-  </li>
-  <li>
-    <p>나 자신과의 약속을 지키자. 내일 일정이 있어서 일찍 들어가야 하는 날은 스스로 절제하자. 절제를 너무 못한다..</p>
-  </li>
-</ol>
+<p>예를 들어, 주어진 정수가 [6, 10, 2]라면 [6102, 6210, 1062, 1026, 2610, 2106]를 만들 수 있고, 이중 가장 큰 수는 6210입니다.</p>
 
+<p>0 또는 양의 정수가 담긴 배열 numbers가 매개변수로 주어질 때, 순서를 재배치하여 만들 수 있는 가장 큰 수를 문자열로 바꾸어 return 하도록 solution 함수를 작성해주세요.</p>
+
+<h4 id="제한사항">제한사항</h4>
+
+<ul>
+  <li>numbers의 길이는 1 이상 100,000 이하입니다.</li>
+  <li>numbers의 원소는 0 이상 1,000 이하입니다.</li>
+  <li>정답이 너무 클 수 있으니 문자열로 바꾸어 return 합니다.</li>
+</ul>
+
+<h4 id="입출력-예">입출력 예</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th>numbers</th>
+      <th>return</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>[6, 10, 2]</td>
+      <td>“6210”</td>
+    </tr>
+    <tr>
+      <td>[3, 30, 34, 5, 9]</td>
+      <td>“9534330”</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="구현">구현</h4>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><table class="rouge-table"><tbody><tr><td class="rouge-gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="rouge-code"><pre><span class="k">def</span> <span class="nf">solution</span><span class="p">(</span><span class="n">numbers</span><span class="p">):</span>
+    <span class="n">numbers</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">numbers</span><span class="p">))</span>
+    <span class="n">numbers</span><span class="p">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">*</span><span class="mi">3</span><span class="p">,</span> <span class="n">reverse</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="s">''</span><span class="p">.</span><span class="n">join</span><span class="p">(</span><span class="n">numbers</span><span class="p">)))</span>
+</pre></td></tr></tbody></table></code></pre></div></div>
+
+<p>[가장 큰 수] 문제는 숫자를 문자열로 변환하고 변환된 문자열에 3을 곱해서 길이를 늘리고 문자열 비교로 정렬 후, 정답을 구하는 문제였다. 아마 내 말이 잘 이해가 되지 않을 것이다. 나 또한 이 문제를 풀면서 상당히 고생했다. 처음 문제를 접했을 때는 숫자를 어떻게 이어 붙이지? 부터 모든 인덱스별로 다양한 조합을 생성해야 겠다는 생각을 했었다. 하지만, 문제를 풀기 위해 시도할 수록 산으로 가는 느낌이었다. 결국 구글링을 통해 해답을 찾아 분석해보았다.</p>
+
+<p><strong>문자열 * 3</strong>? 이게 무슨 말일까. 도무지 이해가 가지 않았다. 코드를 차근차근 뜯어보니 조금 이해가 갔다. 우선 가장 큰 수를 만들기 위해서는 1~9 중 가장 큰 수가 앞에 오는 것이 맞다. 6, 10, 2 중에서는 6이 가장 크니 앞에 놓고, 2, 10을 순차적으로 놓으면 되겠지? 라는 생각으로 다음 입력을 봤더니 또 다른 문제에 직면한다.</p>
+
+<p><code class="language-plaintext highlighter-rouge">3</code>과 <code class="language-plaintext highlighter-rouge">30</code>은 어떻게 구별해야 할까. 여기서 문자열에 3을 곱하는 이유를 찾을 수 있다. <code class="language-plaintext highlighter-rouge">333</code> 과 <code class="language-plaintext highlighter-rouge">303030</code>중 컴퓨터는 <code class="language-plaintext highlighter-rouge">333</code>을 더 큰 문자열로 인식한다. <code class="language-plaintext highlighter-rouge">ABC</code> &gt; <code class="language-plaintext highlighter-rouge">AAB</code>와 같은 논리이다. 이것을 이해하고 마지막 <code class="language-plaintext highlighter-rouge">return</code>문을 보면 새로운 궁금증이 생긴다.</p>
+
+<p>이미 문자열인 <code class="language-plaintext highlighter-rouge">numbers</code>리스트를 왜 다시 <code class="language-plaintext highlighter-rouge">int</code>로 변환하고 <code class="language-plaintext highlighter-rouge">str</code>로 변환하는가. 이해가 가지 않아</p>
+
+<p><code class="language-plaintext highlighter-rouge">return ''.join(numbers)</code>으로 제출해보았다. 결과는 마지막 테스트를 통과할 수 없었다. 문제는 <code class="language-plaintext highlighter-rouge">'0000'</code>이었다. 0000은 논리적으로 말이 안 되는 수다. 0이 되어야 한다. 0000을 0으로 만들기 위해 int로 변환 후, str로 재변환 시키는 것이다.</p>
 
 
                 <hr style="visibility: hidden;">
                 <ul class="pager">
                     
+                    <li class="previous">
+                        <a href="/intro-to-ML.html" data-toggle="tooltip" data-placement="top" title="[번역] 캐글: 머신러닝 시작하기">
+                        Previous<br>
+                        <span>[번역] 캐글: 머신러닝 시작하기</span>
+                        </a>
+                    </li>
+                    
                     
                     <li class="next">
-                        <a href="/basic-classification.html" data-toggle="tooltip" data-placement="top" title="[Tutorial] Keras: Basic classification">
+                        <a href="/knum.html" data-toggle="tooltip" data-placement="top" title="[프로그래머스] 정렬: k번째수">
                         Next<br>
-                        <span>[Tutorial] Keras: Basic classification</span>
+                        <span>[프로그래머스] 정렬: k번째수</span>
                         </a>
                     </li>
                     
@@ -346,10 +405,25 @@
         
         
         
+                <a data-sort="0002" 
+                    href="/archive/?tag=Algorithm"
+                    title="Algorithm"
+                    rel="6">Algorithm</a>
+        
+                <a data-sort="0004" 
+                    href="/archive/?tag=Sort"
+                    title="Sort"
+                    rel="4">Sort</a>
+        
                 <a data-sort="0005" 
-                    href="/archive/?tag=Plan"
-                    title="Plan"
-                    rel="2">Plan</a>
+                    href="/archive/?tag=Programmers"
+                    title="Programmers"
+                    rel="3">Programmers</a>
+        
+                <a data-sort="0006" 
+                    href="/archive/?tag=BOJ"
+                    title="BOJ"
+                    rel="2">BOJ</a>
     </div>
 </section>
 

@@ -1,43 +1,51 @@
 [
   
     {
-      "title"    : "[ML] 회귀",
-      "subtitle" : " &quot;Regression&quot;",
-      "tags"     : "ML, Regression",
-      "url"      : "/regression.html",
-      "date"     : "2021-06-06 16:37:03 +0900"
+      "title"    : "[백준] 2178: 미로탐색",
+      "subtitle" : " &quot;BFS&quot;",
+      "tags"     : "Algorithm, BOJ, Search, BFS",
+      "url"      : "/maze.html",
+      "date"     : "2021-06-13 00:00:00 +0900"
     } ,
   
     {
-      "title"    : "[Plan] 데이터 사이언스 공부 계획",
-      "subtitle" : " &quot;Data science Roadmap&quot;",
-      "tags"     : "Plan",
-      "url"      : "/plan.html",
-      "date"     : "2021-06-06 15:16:21 +0900"
+      "title"    : "[백준] 2839: 설탕 배달",
+      "subtitle" : " &quot;Greedy&quot;",
+      "tags"     : "Algorithm, BOJ, Greedy",
+      "url"      : "/sugar.html",
+      "date"     : "2021-06-11 00:00:00 +0900"
     } ,
   
     {
-      "title"    : "[독서] 유시민의 글쓰기 특강",
-      "subtitle" : " &quot;글을 잘 쓰기 위한 독서&quot;",
-      "tags"     : "Reading",
-      "url"      : "/how-to-write.html",
-      "date"     : "2021-06-03 22:21:53 +0900"
+      "title"    : "[프로그래머스] 정렬: H-index",
+      "subtitle" : " &quot;Sort&quot;",
+      "tags"     : "Algorithm, Programmers, Sort",
+      "url"      : "/h-index.html",
+      "date"     : "2021-06-09 00:00:00 +0900"
     } ,
   
     {
-      "title"    : "[Tutorial] Keras: Basic classification",
-      "subtitle" : " &quot;Classify images of clothing&quot;",
-      "tags"     : "Tutorial, Keras",
-      "url"      : "/basic-classification.html",
-      "date"     : "2021-06-01 21:59:56 +0900"
+      "title"    : "[알고리즘] 정렬: 선택 정렬",
+      "subtitle" : " &quot;Selection Sort&quot;",
+      "tags"     : "Algorithm, Sort",
+      "url"      : "/selection-sort.html",
+      "date"     : "2021-06-08 00:00:00 +0900"
     } ,
   
     {
-      "title"    : "[Plan] How to live?",
-      "subtitle" : " &quot;personal ideal life-style&quot;",
-      "tags"     : "Plan",
-      "url"      : "/How-to-live.html",
-      "date"     : "2021-06-03 18:59:58 +0900"
+      "title"    : "[프로그래머스] 정렬: k번째수",
+      "subtitle" : " &quot;Sort&quot;",
+      "tags"     : "Algorithm, Programmers, Sort",
+      "url"      : "/knum.html",
+      "date"     : "2021-06-08 00:00:00 +0900"
+    } ,
+  
+    {
+      "title"    : "[프로그래머스] 정렬: 가장 큰 수",
+      "subtitle" : " &quot;Sort&quot;",
+      "tags"     : "Algorithm, Programmers, Sort",
+      "url"      : "/biggest-num.html",
+      "date"     : "2021-06-08 00:00:00 +0900"
     } ,
   
     {
